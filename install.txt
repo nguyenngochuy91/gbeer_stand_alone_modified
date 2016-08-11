@@ -1,0 +1,70 @@
+This document will explain how to install the GBEER standalone application.
+Currently this is a work in porgress, since we are still making major changes
+in the organization and some aspects of the porject.
+
+Dependencies:
+All installation information assumes ubuntu 
+
+Biopython:
+sudo apt-get python-biopython
+
+This program uses clusatlw, though it will soon use clustal omega.
+sudo apt-get clustalw (for clusatlw)
+sudo apt-get clustalo (for clustal omega)
+
+CD-HIT:
+sudo apt-get cd-hit
+
+BLAST:
+sudo apt-get blast2
+
+NCBI tools:
+sudo apt-get ncbi-tools-bin
+
+Levenshtein module for python:
+sudo apt-get install python-levenshtein
+
+matplotlib: I will have to get this bit sorted out
+sudo apt-get install python-matplotlib
+other ways to get, though i don't think they are enough for this project
+sudo apt-get install python-matplotlib
+-or-
+sudo yum install python-matplotlib
+
+git:
+sudo apt-get git
+
+install the repo:
+change directory to wherever you want to run the script from. then,
+git clone https://github.com/reamdc1/gbeer_standalone.git
+
+Data:  With the project we have included a small dataset from proteobacteria. If you are
+interested in using a larger dataset, it can ba found at 
+ftp://ftp.ncbi.nih.gov/genomes/Bacteria/
+additionally, if you wish to download every fully sequenced bacterial genome, go here
+ftp://ftp.ncbi.nih.gov/genomes/Bacteria/all.gbk.tar.gz
+This file is 7.6 GB as of August, 2015
+
+This file could read:
+
+Dependencies:
+All installation information assumes ubuntu:
+sudo apt-get python-biopython
+sudo apt-get blast2
+sudo apt-get ncbi-tools-bin
+sudo apt-get install python-levenshtein
+sudo apt-get cd-hit
+sudo apt-get clustalw
+sudo apt-get git
+sudo apt-get install python-matplotlib
+
+install the repo:
+change directory to wherever you want to run the script from. then,
+git clone https://github.com/reamdc1/gbeer_standalone.git
+
+Data:  With the project we have included a small dataset from proteobacteria. If you are
+interested in using a larger dataset, it can ba found at 
+ftp://ftp.ncbi.nih.gov/genomes/Bacteria/
+additionally, if you wish to download every fully sequenced bacterial genome, go here
+ftp://ftp.ncbi.nih.gov/genomes/Bacteria/all.gbk.tar.gz
+This file is 7.6 GB as of August, 2015

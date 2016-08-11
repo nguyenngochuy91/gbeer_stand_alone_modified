@@ -1,0 +1,88 @@
+configuration:
+[
+	{
+		variable_name : 'regulon_url'
+		value : 'http://regulondb.ccg.unam.mx/menu/download/datasets/files/OperonSet.txt'
+
+	}
+	{
+		variable_name : 'regulon_outfolder'
+		value : 'regulonDB/'
+
+	}
+	{
+		variable_name : 'regulon_default_gene_block_file'
+		value : 'gene_block_names_and_genes.txt'
+
+	}
+	{
+		variable_name : 'tree_marker_gene'
+		value : 'rpob'
+
+	}
+	{
+		variable_name : 'tree_outfolder'
+		value : 'tree/'
+
+	}
+	{
+		variable_name : 'BLAST_database_folder'
+		value : 'db/'
+
+	}
+	{
+		variable_name : 'BLAST_format_protein'
+		value : 'True'
+
+	}
+	{
+		variable_name : 'gene_block_query_outfile'
+		value : 'gene_block_query.fa'
+
+	}
+	{
+		variable_name : 'refrence_organism'
+		value : 'NC_000964'
+
+	}	
+	{
+		variable_name : 'BLAST_outfolder'
+		value : 'blast_result/'
+
+	}
+	{
+		variable_name : 'BLAST_parse_outfolder'
+		value : 'blast_parse/'
+
+	}
+	{
+		variable_name : 'filter_BLAST_parse_outfolder'
+		value : 'optimized_gene_blocks/'
+
+	}
+	{
+		variable_name : 'event_distance_outfolder'
+		value : 'gene_block_distance_matrices/'
+
+	}
+	{
+		variable_name : 'visualization_outfolder'
+		value : 'visualization/'
+
+	}
+	{
+		variable_name : 'newick_tree_name'
+		value : 'out_tree.nwk'
+
+	}
+	{
+		variable_name : 'Accesion_Name_mapping_File'
+		value : 'accession_to_common.csv'
+
+	}
+	{
+		variable_name : 'Phylogenetic_Order_Species_File'
+		value : 'phylo_order_new.txt'
+
+	}
+]

@@ -1,0 +1,38 @@
+ Betaproteobacteria:black
+NC_011833:brown
+NC_002696:purple
+NC_012442:purple
+NC_002516:brown
+NC_007086:brown
+NC_000913:brown
+NC_004633:brown
+NC_004757:black
+NC_005085:black
+NC_002679:purple
+NC_003143:brown
+NC_005061:brown
+ Epsilonproteobacteria:red
+NC_004311:purple
+NC_002163:red
+ Gammaproteobacteria:brown
+NC_002929:black
+NC_003197:brown
+NC_004917:red
+NC_004603:brown
+ Alphaproteobacteria:purple
+NC_000907:brown
+NC_003064:purple
+NC_003295:black
+NC_005090:red
+NC_004741:brown
+NC_003112:black
+NC_002489:brown
+NC_003919:brown
+NC_002928:black
+NC_003047:purple
+NC_002663:brown
+NC_002927:black
+NC_002947:brown
+NC_004349:brown
+NC_004463:purple
+NC_004460:brown

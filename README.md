@@ -58,13 +58,10 @@ git pull
 ----------------------------
 
 With the project we have included a small dataset from proteobacteria. If you are
-interested in using a larger dataset, individual organism genbank files can be found at 
-ftp://ftp.ncbi.nih.gov/genomes/Bacteria/
-
-Additionally, if you wish to download every fully sequenced bacterial genome you can use the following command.
-Just make sure that you are in the directory you want to store it.
+interested in using a larger dataset, you can run the **download.py** file to download all
+the bacteria files that are the latest and the complete ones.You can run the program as following:
 ```bash
-wget ftp://ftp.ncbi.nih.gov/genomes/Bacteria/all.gbk.tar.gz
+./download.py
 ```
 
 Additionally it can be downloaded using a browser from the following address.

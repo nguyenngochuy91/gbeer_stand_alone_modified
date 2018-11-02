@@ -43,7 +43,7 @@ sudo apt-get install git
 Once this is installed you can download the latest version of the project using the command
 
 ```bash
-git clone https://github.com/reamdc1/gbeer_standalone.git
+git clone https://github.com/nguyenngochuy91/gbeer_stand_alone_modified.git
 ```
 
 To update the software package you need to change to the directory that you stored the 

@@ -10,7 +10,6 @@ from Bio.Seq import Seq
 from Bio.Alphabet import IUPAC
 from Bio.SeqUtils import GC
 from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import generic_dna
 #from Bio.Seq import Seq
 #from Bio.Alphabet import generic_dna
 
@@ -170,35 +169,29 @@ def convert_genbank(genbank_tuple):
                 #print type(seq)
                 #print feature.qualifiers.keys()
                 #seq = dir(feature)
-                if 'translation' in feature.qualifiers.keys():
-                    prot_seq = Seq(''.join(feature.qualifiers['translation']), IUPAC.protein)
-                    #print "prot_seq", type(prot_seq), prot_seq
-                    
-                    if 'gene' in feature.qualifiers:
-                        gene = feature.qualifiers['gene'][0]
+                try:
+                    if 'translation' in feature.qualifiers.keys():
+                        prot_seq = Seq(''.join(feature.qualifiers['translation']), IUPAC.protein)
+                        #print "prot_seq", type(prot_seq), prot_seq
                         
-                        #record_list.append(SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, gene, str(start), str(stop), str(strand), gc]).replace(' ', ''), description = ''))
-                        seq_rec_to_store = SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, gene, str(start), str(stop), str(strand), gc]).replace(' ', ''), description = '')
-                    
+                        if 'gene' in feature.qualifiers:
+                            gene = feature.qualifiers['gene'][0]
+                            #record_list.append(SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, gene, str(start), str(stop), str(strand), gc]).replace(' ', ''), description = ''))
+                            seq_rec_to_store = SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, gene, str(start), str(stop), str(strand), gc]).replace(' ', ''), description = '')
+                        else:
+                            #record_list.append(SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, 'unknown', str(start), str(stop), str(strand), gc]).replace(' ', ''),description = ''))
+                            seq_rec_to_store = SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, 'unknown', str(start), str(stop), str(strand), gc]).replace(' ', ''),description = '')
+                            #print prot_seq
                     else:
-                        #record_list.append(SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, 'unknown', str(start), str(stop), str(strand), gc]).replace(' ', ''),description = ''))
-                        seq_rec_to_store = SeqRecord(prot_seq, id = '|'.join([accession, organism, locus, 'unknown', str(start), str(stop), str(strand), gc]).replace(' ', ''),description = '')
-                        #print prot_seq
-                   
+                        pass
                         #print "This was not a protein sequence"
-                else:
-                    print "this is a pseudo gene"
-                    # print "Error in function convert_genbank(genbank_tuple) from the format_db.py script, unhandled error in the genbank parse."
+                except:
+                    print "Error in function convert_genbank(genbank_tuple) from the format_db.py script, unhandled error in the genbank parse."
             else:
                 # put something in here that will deal with RNA later, if we plan to go that route.
                 pass
             if not error_in_field:
-                try:
-                    record_list.append(seq_rec_to_store)
-                except UnboundLocalError,e:
-                    print 'UnboundLocalError:',e
-                    print "locus",locus
-                    print "genbank_path",genbank_path
+                record_list.append(seq_rec_to_store)
             else:
                 print "a record was omitted"
             
@@ -250,7 +243,7 @@ def convert_genbank(genbank_tuple):
         cmd = "formatdb -i %s -p F -o F" % (outpath)
     os.system(cmd)
     #print "Passed main loop"
-
+  
     return outpath, err_flag
 
 
@@ -264,7 +257,6 @@ def parallel_convert_genbank(file_list, outfolder, num_proc, do_protein, error_f
     tuple_list = [(i, outfolder, error_fname, do_protein) for i in file_list]
     
     pool = Pool(processes = num_proc)
-    # print "tuple_list",len(tuple_list)
     result = dict(pool.map(convert_genbank, tuple_list))
 
 

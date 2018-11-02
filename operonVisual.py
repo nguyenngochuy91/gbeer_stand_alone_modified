@@ -65,7 +65,7 @@ def reading_optFile(file_handle):
 
 def gdVisualizationDict(infile):
     result = {}
-    for line in [i.strip() for i in opeconvert_to_ultrametricn(infile).readlines()]:
+    for line in [i.strip() for i in open(infile).readlines()]:
             hlog = Homolog.from_blast(line)
             accession = hlog.accession()
             start = hlog.start()

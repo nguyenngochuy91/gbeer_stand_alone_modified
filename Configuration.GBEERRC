@@ -42,7 +42,7 @@ configuration:
 	}
 	{
 		variable_name : 'refrence_organism'
-		value : 'NC_000964'
+		value : 'NC_000913'
 
 	}	
 	{

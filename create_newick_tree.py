@@ -19,7 +19,6 @@ from Bio.Application import _Option
 from Bio.Align.Applications import MuscleCommandline
 from Bio import Phylo, AlignIO
 import subprocess
-import Configuration_Variables as conf_var
 import traceback
 
 # Globals
@@ -382,9 +381,9 @@ def main():
         print genbank_directory, outfolder, filter_file, marker_gene
     
     # set the paths for the three output files
-    newick_tree_outfile = outfolder + conf_var.newick_tree
-    accession_to_common_outfile = outfolder + conf_var.accession_to_common # formally: outfile_for_asma
-    phylo_order_new_outfile = outfolder + conf_var.phylo_order_new
+    newick_tree_outfile = outfolder + 'out_tree.nwk'
+    accession_to_common_outfile = outfolder + 'accession_to_common.csv' # formally: outfile_for_asma
+    phylo_order_new_outfile = outfolder + 'phylo_order_new.txt'
     
     # Execute code fork that builds a tree from scratch
     if tree_file == 'NONE':

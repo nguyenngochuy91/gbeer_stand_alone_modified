@@ -6,7 +6,7 @@ casABCDE12	casA	casB	casC	casD	casE	cas1	cas2
 chbBCARFG	chbB	chbC	chbA	chbR	chbF	chbG
 cyoABCDE	cyoA	cyoB	cyoC	cyoD	cyoE
 cysPUWAM	cysP	cysU	cysW	cysA	cysM
-dicB-ydfDE-insD-intQ	dicB	ydfD	ydfE	insD	intQ
+dicB-ydfDE-insD-7-intQ	dicB	ydfD	ydfE	insD-7	intQ
 dppABCDF	dppA	dppB	dppC	dppD	dppF
 fecABCDE	fecA	fecB	fecC	fecD	fecE
 flgBCDEFGHIJ	flgB	flgC	flgD	flgE	flgF	flgG	flgH	flgI	flgJ
@@ -43,11 +43,13 @@ pspABCDE	pspA	pspB	pspC	pspD	pspE
 pstSCAB-phoU	pstS	pstC	pstA	pstB	phoU
 puuDRCBE	puuD	puuR	puuC	puuB	puuE
 rbsDACBKR	rbsD	rbsA	rbsC	rbsB	rbsK	rbsR
+rirA-waaQGPSBOJYZU	rirA	waaQ	waaG	waaP	waaS	waaB	waaO	waaJ	waaY	waaZ	waaU
 rnc-era-recO-pdxJ-acpS	rnc	era	recO	pdxJ	acpS
 rplKAJL-rpoBC	rplK	rplA	rplJ	rplL	rpoB	rpoC
 rrsA-ileT-alaT-rrlA-rrfA	rrsA	ileT	alaT	rrlA	rrfA
 rrsD-ileU-alaU-rrlD-rrfD-thrV-rrfF	rrsD	ileU	alaU	rrlD	rrfD	thrV	rrfF
 rrsH-ileV-alaV-rrlH-rrfH	rrsH	ileV	alaV	rrlH	rrfH
+rseD-rpoE-rseABC	rseD	rpoE	rseA	rseB	rseC
 sdhCDAB-sucABCD	sdhC	sdhD	sdhA	sdhB	sucA	sucB	sucC	sucD
 serV-argVYZQ	serV	argV	argY	argZ	argQ
 sgrR-sroA-tbpA-thiPQ	sgrR	sroA	tbpA	thiP	thiQ
@@ -59,8 +61,7 @@ thrS-infC-rpmI-rplT-pheMST-ihfA	thrS	infC	rpmI	rplT	pheM	pheS	pheT	ihfA
 thrU-tyrU-glyT-thrT-tufB	thrU	tyrU	glyT	thrT	tufB
 trpLEDCBA	trpL	trpE	trpD	trpC	trpB	trpA
 ulaABCDEF	ulaA	ulaB	ulaC	ulaD	ulaE	ulaF
-waaQGPSBOJYZU	waaQ	waaG	waaP	waaS	waaB	waaO	waaJ	waaY	waaZ	waaU
-ybgIJKL-nei	ybgI	ybgJ	ybgK	ybgL	nei
+ybgI-pxpBCA-nei	ybgI	pxpB	pxpC	pxpA	nei
 yceD-rpmF-plsX-fabHDG-acpP-fabF	yceD	rpmF	plsX	fabH	fabD	fabG	acpP	fabF
 ydgK-rsxABCDGE-nth	ydgK	rsxA	rsxB	rsxC	rsxD	rsxG	rsxE	nth
 ydhYVWXUT	ydhY	ydhV	ydhW	ydhX	ydhU	ydhT

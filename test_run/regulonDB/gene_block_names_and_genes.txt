@@ -46,7 +46,6 @@ thiCEFSGH	thiS	thiH	thiC	thiG	thiF	thiE
 thrS-infC-rpmI-rplT-pheMST-ihfA	rpmI	pheS	pheT	ihfA	rplT	infC	thrS	pheM
 trpLEDCBA	trpL	trpB	trpC	trpA	trpD	trpE
 ulaABCDEF	ulaD	ulaE	ulaF	ulaA	ulaB	ulaC
-ybgIJKL-nei	ybgI	ybgJ	ybgK	ybgL	nei
 yceD-rpmF-plsX-fabHDG-acpP-fabF	fabD	fabG	fabF	acpP	yceD	plsX	fabH	rpmF
 ydgK-rsxABCDGE-nth	rsxA	ydgK	rsxC	rsxB	rsxE	rsxD	rsxG	nth
 ydhYVWXUT	ydhY	ydhX	ydhW	ydhV	ydhU	ydhT

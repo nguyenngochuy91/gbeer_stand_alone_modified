@@ -2,7 +2,6 @@
 #
 #      RegulonDB is free for academic/noncommercial use
 #
-#      User is not entitled to change or erase data sets of the RegulonDB
 #      database or to eliminate copyright notices from RegulonDB. Furthermore,
 #      User is not entitled to expand RegulonDB or to integrate RegulonDB partly
 #      or as a whole into other databank systems, without prior written consent
@@ -12,9 +11,8 @@
 #
 # Citation
 #
-#      Salgado, H. et al. (2013). "RegulonDB v8.0: Omics data sets, evolutionary conservation,
-#      regulatory phrases, cross-validated gold standards and more".
-#      Nucleic Acids Research. 2013 Jan 1;41(D1):D203-D213. Epub 2012 Nov 29.
+#      Gama-Castro S et al. (2016). "RegulonDB version 9.0: high-level integration of gene regulation, coexpression, motif clustering and beyond.",
+#      Nucleic Acids Res. 2016 Jan 4;44(D1):D133-43. doi: 10.1093/nar/gkv1156. Epub 2015 Nov 2.
 #
 #
 # Contact
@@ -24,7 +22,7 @@
 #          (regulondb@ccg.unam.mx)
 #
 #
-# Release: 9.2 Date: 09-08-2016
+# Release: 10.0 Date: 18/06/18
 # ___________________________________________________________________________
 # Columns:
 # (1) Operon name
@@ -36,7 +34,6 @@
 # (7) Evidence that support the existence of the operon's TUs
 # (8) Evidence confidence level (Confirmed, Strong, Weak)
 C0067	238462	238586	forward	1	C0067	[ICWHO|W|Inferred computationally without human oversight]	Weak
-C0293	1196714	1196786	forward	1	C0293	[ICWHO|W|Inferred computationally without human oversight]	Weak
 C0299	1230629	1230707	forward	1	C0299		
 C0362	1552001	1552386	forward	1	C0362	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 C0465	1972739	1972816	forward	1	C0465	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -57,7 +54,7 @@ accBC	3405436	3407266	forward	2	accB,accC	[BTEI|W|Boundaries of transcription ex
 accD	2433012	2433926	reverse	1	accD	[LTED|S|Length of transcript experimentally determined]	Strong
 aceBAK	4215478	4220332	forward	3	aceB,aceA,aceK	[BTEI|W|Boundaries of transcription experimentally identified]; [PM|S|Polar mutation]	Strong
 ackA-pta	2413470	2416891	forward	2	ackA,pta	[LTED|S|Length of transcript experimentally determined]	Strong
-acnA	1335831	1338506	forward	1	acnA	[LTED|S|Length of transcript experimentally determined]; [IC|W|Inferred by curator]	Weak
+acnA	1335831	1338506	forward	1	acnA	[LTED|S|Length of transcript experimentally determined]; [IC|W|Inferred by curator]	Strong
 acnB	131615	134212	forward	1	acnB	[LTED|S|Length of transcript experimentally determined]; [IC|W|Inferred by curator]	Weak
 acpH	424337	424918	reverse	1	acpH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 acpT	3612969	3613556	forward	1	acpT	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -105,6 +102,7 @@ allS	531295	532221	reverse	1	allS	[BTEI|W|Boundaries of transcription experiment
 alpA	2758644	2758856	forward	1	alpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 alr	4265782	4266861	forward	1	alr	[ICWHO|W|Inferred computationally without human oversight]	Weak
 alsK	4306870	4307799	reverse	1	alsK	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
+alsRBACE	4307783	4312991	reverse	5	alsR,alsB,alsA,alsC,alsE	[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 alx	3238580	3239545	forward	1	alx	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 amiA-hemF	2552352	2554124	forward	2	amiA,hemF	[LTED|S|Length of transcript experimentally determined]	Strong
 amiC	2947757	2949010	reverse	1	amiC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -203,7 +201,7 @@ bcsEFG	3696458	3699893	forward	3	bcsE,bcsF,bcsG	[ICWHO|W|Inferred computationall
 bcsQ	3695233	3695961	reverse	1	bcsQ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 bdcA	4473340	4474053	reverse	1	bdcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 bdcR	4474124	4474717	forward	1	bdcR	[ICWHO|W|Inferred computationally without human oversight]	Weak
-bdm-sra	1555826	1556280	reverse	2	bdm,sra	[PM|S|Polar mutation]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+bdm-sra	1555826	1556280	reverse	2	bdm,sra	[BTEI|W|Boundaries of transcription experimentally identified]; [PM|S|Polar mutation]	Strong
 bepA-yfgD	2616094	2617937	forward	2	bepA,yfgD	[ITCR|W|Inferred through co-regulation]	Weak
 betIBA	325577	329334	reverse	3	betI,betB,betA		
 betT	329463	331496	forward	1	betT		
@@ -216,6 +214,7 @@ bhsA	1169073	1169330	forward	1	bhsA	[IC|W|Inferred by curator]; [AISGDTU|W|Autom
 bioA	807968	809257	reverse	1	bioA		
 bioBFCD	809344	812947	forward	4	bioB,bioF,bioC,bioD		
 bioH	3544074	3544844	reverse	1	bioH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+bioP	4011076	4011975	forward	1	bioP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 bipA	4058407	4060230	forward	1	bipA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 bisC	3714061	3716394	reverse	1	bisC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 blc	4377189	4377722	reverse	1	blc	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -228,6 +227,8 @@ brnQ-proY	419591	422359	forward	2	brnQ,proY	[ICWHO|W|Inferred computationally wi
 bsmA	4416441	4416770	reverse	1	bsmA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 bssR	878248	878631	forward	1	bssR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 bssS	1120701	1120955	reverse	1	bssS	[IC|W|Inferred by curator]	
+btsSR	2212243	2214644	reverse	2	btsS,btsR	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
+btsT	4589129	4591279	reverse	1	btsT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 btuB-murI	4163639	4166285	forward	2	btuB,murI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 btuCED	1792809	1795152	reverse	3	btuC,btuE,btuD		
 cadBA	4356470	4360031	reverse	2	cadB,cadA	[PM|S|Polar mutation]	
@@ -235,41 +236,43 @@ cadC	4360396	4361934	reverse	1	cadC
 caiF	34300	34695	forward	1	caiF	[LTED|S|Length of transcript experimentally determined]	Strong
 caiTABCDE	34781	41931	reverse	6	caiT,caiA,caiB,caiC,caiD,caiE	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 can	142008	142670	reverse	1	can	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[IEP|W|Inferred from expression pattern]	Weak
-carAB	29651	34038	forward	2	carA,carB	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+carAB	29651	34038	forward	2	carA,carB	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 cas3	2884553	2887219	reverse	1	cas3	[ICWHO|W|Inferred computationally without human oversight]	Weak
 casABCDE12	2878569	2884138	reverse	7	casA,casB,casC,casD,casE,cas1,cas2	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]; [IC|W|Inferred by curator]	Weak
 cbl	2059964	2060914	reverse	1	cbl	[LTED|S|Length of transcript experimentally determined]	Strong
 cbpAM	1062550	1063775	reverse	2	cbpA,cbpM	[PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 cbrA	3869377	3870441	forward	1	cbrA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 cbrBC	3897506	3898609	forward	2	cbrB,cbrC	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
+ccp	3667791	3669188	reverse	1	ccp	[ICWHO|W|Inferred computationally without human oversight]	Weak
 cdaR	182463	183620	forward	1	cdaR	[LTED|S|Length of transcript experimentally determined]	Strong
 cdd	2231844	2232728	forward	1	cdd	[ICWHO|W|Inferred computationally without human oversight]	Weak
 cdgI	1870385	1871860	forward	1	cdgI	[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]	Strong
 cdh	4109930	4110685	forward	1	cdh	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 cdsA	195677	196534	forward	1	cdsA	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
+cecR-ybhGFSR	825002	830643	reverse	5	cecR,ybhG,ybhF,ybhS,ybhR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 cedA	1813421	1813663	reverse	1	cedA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 cfa	1741413	1742561	forward	1	cfa	[LTED|S|Length of transcript experimentally determined]	Strong
 chaA	1270749	1271849	reverse	1	chaA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 chaBC	1272119	1273202	forward	2	chaB,chaC	[IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	
 chbBCARFG	1816386	1821619	reverse	6	chbB,chbC,chbA,chbR,chbF,chbG		
 chiA	3467160	3469853	reverse	1	chiA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-chiP-ybfN	708334	710116	forward	2	chiP,ybfN	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+chiPQ	708334	710116	forward	2	chiP,chiQ	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 chiX	507204	507287	forward	1	chiX	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 cho	1823515	1824402	forward	1	cho	[LTED|S|Length of transcript experimentally determined]	Strong
 chpSB	4448447	4449042	forward	2	chpS,chpB		
 cirA	2244778	2246769	reverse	1	cirA	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
-citCDEFXG	646631	651856	reverse	6	citC,citD,citE,citF,citX,citG	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
+citCDEFXG	646631	651856	reverse	6	citC,citD,citE,citF,citX,citG	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
 citT	645117	646580	reverse	1	citT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 clcA	175107	176528	forward	1	clcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 clcB	1665315	1666571	forward	1	clcB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 clpA	923264	925540	forward	1	clpA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 clpB	2731600	2734173	reverse	1	clpB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-clpPX-lon	456677	461242	forward	3	clpP,clpX,lon	[LTED|S|Length of transcript experimentally determined]; [ITCR|W|Inferred through co-regulation]; [ICWHO|W|Inferred computationally without human oversight],[IEP|W|Inferred from expression pattern]	Strong
+clpPX-lon	456677	461242	forward	3	clpP,clpX,lon	[ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight],[IEP|W|Inferred from expression pattern]	Strong
 clpS	922913	923233	forward	1	clpS	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 clsA-yciU	1306821	1308645	reverse	2	clsA,yciU	[ICWHO|W|Inferred computationally without human oversight]	Weak
-cmk-rpsA-ihfB	961201	964112	forward	3	cmk,rpsA,ihfB	[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined]	Strong
-cmoM-mukFEB	973537	980786	forward	4	cmoM,mukF,mukE,mukB	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Strong
-cmtBA-yggPFDC	3073976	3079330	reverse	6	cmtB,cmtA,yggP,yggF,yggD,yggC	[ICWHO|W|Inferred computationally without human oversight]	
+cmk-rpsA-ihfB	961201	964112	forward	3	cmk,rpsA,ihfB	[LTED|S|Length of transcript experimentally determined]; [PM|S|Polar mutation]	Strong
+cmoM-mukFEB	973537	980786	forward	4	cmoM,mukF,mukE,mukB	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
+cmtBA-yggPF-fumE-yggC	3073976	3079330	reverse	6	cmtB,cmtA,yggP,yggF,fumE,yggC	[ICWHO|W|Inferred computationally without human oversight]	
 cnu	1704949	1705164	forward	1	cnu	[ICWHO|W|Inferred computationally without human oversight]	Weak
 coaA	4174076	4175026	reverse	1	coaA	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 coaE-zapD-yacG	111649	113219	reverse	3	coaE,zapD,yacG	[ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -277,16 +280,16 @@ cobUST	2063388	2065764	reverse	3	cobU,cobS,cobT	[BTEI|W|Boundaries of transcript
 codBA	354922	357454	forward	2	codB,codA	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]	Strong
 cof	467412	468230	forward	1	cof	[ICWHO|W|Inferred computationally without human oversight]	Weak
 comR	1168200	1168832	reverse	1	comR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-copA	508875	511379	reverse	1	copA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+copA	508875	511379	reverse	1	copA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 corA	4001426	4002376	forward	1	corA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 cpdB	4434622	4436565	reverse	1	cpdB		
-cpxP	4105820	4106320	forward	1	cpxP	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+cpxPQ	4105820	4106387	forward	2	cpxP,cpxQ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 cpxRA	4103602	4105670	reverse	2	cpxR,cpxA	[IC|W|Inferred by curator]	Weak
 cra	88028	89032	forward	1	cra	[ICWHO|W|Inferred computationally without human oversight]	Weak
 crcB	657555	657938	reverse	1	crcB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 creABCD	4635521	4639530	forward	4	creA,creB,creC,creD	[ITCR|W|Inferred through co-regulation]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 crfC-yjcZ	4327135	4330238	forward	2	crfC,yjcZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-crl	257829	259006	forward	1	crl	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+crl_1	257829	257907	forward	1	crl_1	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 crp	3486120	3486752	forward	1	crp		
 csdAE	2943337	2944985	forward	2	csdA,csdE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 csgBAC	1103951	1105293	forward	3	csgB,csgA,csgC	[LTED|S|Length of transcript experimentally determined]	
@@ -322,13 +325,13 @@ cybB	1490902	1491432	forward	1	cybB	[ICWHO|W|Inferred computationally without hu
 cybC	4459553	4459855	forward	1	cybC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 cycA	4429864	4431276	forward	1	cycA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 cydAB	771458	774181	forward	2	cydA,cydB	[TAS|W|Traceable author statement]	
-cydDC	927474	930962	reverse	2	cydD,cydC	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+cydDC	927474	930962	reverse	2	cydD,cydC	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 cydX-ybgE	774196	774602	forward	2	cydX,ybgE	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 cynR	357791	358690	reverse	1	cynR		
 cynTSX	358799	361146	forward	3	cynT,cynS,cynX	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 cyoABCDE	446815	451610	reverse	5	cyoA,cyoB,cyoC,cyoD,cyoE		
 cysB	1333855	1334829	forward	1	cysB		
-cysDNC	2873387	2876329	reverse	3	cysD,cysN,cysC	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Strong
+cysDNC	2873387	2876329	reverse	3	cysD,cysN,cysC	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 cysE	3781741	3782562	reverse	1	cysE	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 cysJIH	2887578	2891898	reverse	3	cysJ,cysI,cysH		
 cysK	2532409	2533380	forward	1	cysK	[IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -356,9 +359,10 @@ dcuSR	4349315	4351662	reverse	2	dcuS,dcuR	[ITCR|W|Inferred through co-regulation
 dcyD-tcyLN	1997062	1999480	reverse	3	dcyD,tcyL,tcyN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ddlA	399829	400923	reverse	1	ddlA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ddpXABCDF	1557112	1563076	reverse	6	ddpX,ddpA,ddpB,ddpC,ddpD,ddpF	[PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
+decR	468383	468841	forward	1	decR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 def-fmt	3433690	3435161	forward	2	def,fmt	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 degP	180884	182308	forward	1	degP	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
-degQS	3380743	3383267	forward	2	degQ,degS	[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined]	Strong
+degQS	3380743	3383267	forward	2	degQ,degS	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Strong
 deoCABD	4617323	4621602	forward	4	deoC,deoA,deoB,deoD	[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Strong
 deoR	881976	882734	reverse	1	deoR	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 dfp	3812731	3813951	forward	1	dfp	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
@@ -378,12 +382,12 @@ dhaKLM	1247696	1250838	reverse	3	dhaK,dhaL,dhaM	[ITCR|W|Inferred through co-regu
 dhaR	1251066	1252985	forward	1	dhaR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 diaA	3295809	3296399	forward	1	diaA	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 dicA	1647934	1648341	forward	1	dicA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-dicB-ydfDE-insD-intQ	1649609	1652708	forward	5	dicB,ydfD,ydfE,insD,intQ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+dicB-ydfDE-insD-7-intQ	1649609	1652708	forward	5	dicB,ydfD,ydfE,insD-7,intQ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 dicC-ydfXW	1647174	1647850	reverse	3	dicC,ydfX,ydfW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 dicF	1649382	1649434	forward	1	dicF	[ICWHO|W|Inferred computationally without human oversight]	Weak
-dinB-yafNOP	250898	253161	forward	4	dinB,yafN,yafO,yafP	[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+dinB-yafNOP	250898	253161	forward	4	dinB,yafN,yafO,yafP	[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 dinD	3817760	3818584	forward	1	dinD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-dinG	833070	835220	forward	1	dinG		
+dinG-ybiB	833070	836210	forward	2	dinG,ybiB	[LTED|S|Length of transcript experimentally determined],[IEP|W|Inferred from expression pattern]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
 dinI	1121242	1121487	reverse	1	dinI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 dinJ-yafQ	245961	246502	reverse	2	dinJ,yafQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 dinQ	3647705	3647788	reverse	1	dinQ	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
@@ -447,7 +451,7 @@ entCEBAH	624885	629713	forward	5	entC,entE,entB,entA,entH	[IC|W|Inferred by cura
 entS	622300	623550	forward	1	entS		
 envR	3412803	3413465	reverse	1	envR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 envY-ompT	584680	586908	reverse	2	envY,ompT		
-epd-pgk-fbaA	3070165	3073691	reverse	3	epd,pgk,fbaA	[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
+epd-pgk-fbaA	3070165	3073691	reverse	3	epd,pgk,fbaA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 epmA	4382643	4383620	forward	1	epmA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 epmB	4374629	4375657	reverse	1	epmB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 eptA	4333947	4335590	reverse	1	eptA	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
@@ -456,7 +460,7 @@ eptC	4148532	4150265	reverse	1	eptC	[ICWHO|W|Inferred computationally without hu
 erpA	176610	176954	forward	1	erpA		
 esrE	4019978	4020229	forward	1	esrE	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 essD-rrrD-rzpD	577398	578568	forward	3	essD,rrrD,rzpD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-essQ-ydfR-rrrQ-ydfP	1639030	1640585	reverse	4	essQ,ydfR,rrrQ,ydfP	[ICWHO|W|Inferred computationally without human oversight]	Weak
+essQ-ydfR-rrrQ-rzpQ	1639030	1640585	reverse	4	essQ,ydfR,rrrQ,rzpQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ettA	4628855	4630522	reverse	1	ettA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 eutBCLKR	2554130	2558679	reverse	5	eutB,eutC,eutL,eutK,eutR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 eutHA	2565481	2568107	reverse	2	eutH,eutA	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -475,7 +479,7 @@ fadD-sroD	1888017	1889746	reverse	2	fadD,sroD	[BTEI|W|Boundaries of transcriptio
 fadE	240859	243303	reverse	1	fadE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 fadH	3231665	3233683	forward	1	fadH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 fadIJ	2457015	2460469	reverse	2	fadI,fadJ		
-fadL	2461300	2462646	forward	1	fadL	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
+fadL	2461306	2462646	forward	1	fadL	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 fadM	464402	464800	forward	1	fadM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 fadR	1234938	1235657	forward	1	fadR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 fbaB	2177512	2178564	reverse	1	fbaB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -487,9 +491,9 @@ fdoGHI-fdhE	4080299	4085822	reverse	4	fdoG,fdoH,fdoI,fdhE
 fdrA-ylbEF-ybcF	546680	551332	forward	4	fdrA,ylbE,ylbF,ybcF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 feaB	1447519	1449018	forward	1	feaB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 feaR	1446378	1447283	reverse	1	feaR	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-fecABCDE	4510690	4516677	reverse	5	fecA,fecB,fecC,fecD,fecE	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Confirmed
+fecABCDE	4510690	4516677	reverse	5	fecA,fecB,fecC,fecD,fecE	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 fecIR	4516764	4518235	reverse	2	fecI,fecR	[LTED|S|Length of transcript experimentally determined]	Strong
-feoABC	3540163	3542964	forward	3	feoA,feoB,feoC	[PM|S|Polar mutation]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
+feoABC	3540163	3542964	forward	3	feoA,feoB,feoC	[PM|S|Polar mutation]	Strong
 fepA-entD	609459	612494	reverse	2	fepA,entD		
 fepB	623554	624510	reverse	1	fepB		
 fepDGC	619384	622189	reverse	3	fepD,fepG,fepC		
@@ -558,10 +562,11 @@ ftsYEX	3601028	3604243	reverse	3	ftsY,ftsE,ftsX	[PAGTSBP|W|Products of adjacent 
 fucAO	2931865	2933688	reverse	2	fucA,fucO	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 fucPIKUR	2934235	2940099	forward	5	fucP,fucI,fucK,fucU,fucR	[BTEI|W|Boundaries of transcription experimentally identified]	
 fumAC	1685185	1688377	reverse	2	fumA,fumC	[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
+fumD	1754932	1755141	reverse	1	fumD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 fxsA	4368664	4369140	forward	1	fxsA	[LTED|S|Length of transcript experimentally determined]	Strong
 gadAXW	3663890	3667580	reverse	3	gadA,gadX,gadW	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 gadBC	1568954	1572045	reverse	2	gadB,gadC	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]	Weak
-gadE-mdtEF	3658366	3663527	forward	3	gadE,mdtE,mdtF	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined]	
+gadEF-mdtEF	3658366	3663527	forward	4	gadE,gadF,mdtE,mdtF	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined]	Weak
 gadY	3664864	3664968	forward	1	gadY	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 galETKM	787797	792055	reverse	4	galE,galT,galK,galM	[LTED|S|Length of transcript experimentally determined]	Strong
 galF	2113434	2114327	reverse	1	galF	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
@@ -569,7 +574,7 @@ galP	3088284	3089678	forward	1	galP
 galR	2976599	2977630	forward	1	galR		
 galS	2240628	2241668	reverse	1	galS		
 galU	1291457	1292365	forward	1	galU	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-gapA-yeaD	1862771	1864734	forward	2	gapA,yeaD	[ITCR|W|Inferred through co-regulation]; [ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+gapA-yeaD	1862771	1864734	forward	2	gapA,yeaD	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 gapC_1C_2	1489713	1490713	reverse	2	gapC_1,gapC_2	[ITCR|W|Inferred through co-regulation]	Weak
 garD	3275282	3276853	forward	1	garD	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 garPLRK-rnpB	3270216	3274907	reverse	5	garP,garL,garR,garK,rnpB	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -577,7 +582,7 @@ gatR_1	2169693	2170139	reverse	1	gatR_1	[AISGDTU|W|Automated inference that a si
 gatR_2	2171395	2171733	reverse	1	gatR_2		
 gatYZABCD	2171833	2177204	reverse	6	gatY,gatZ,gatA,gatB,gatC,gatD	[BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]	Weak
 gcd	138835	141225	reverse	1	gcd	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-gcl-hyi-glxR-ybbW-allB-ybbY-glxK	533916	543033	forward	7	gcl,hyi,glxR,ybbW,allB,ybbY,glxK	[ITCR|W|Inferred through co-regulation]; [BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]	Weak
+gcl-hyi-glxR-ybbW-allB-ybbY-glxK	533916	543033	forward	7	gcl,hyi,glxR,ybbW,allB,ybbY,glxK	[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation]; [IC|W|Inferred by curator]	Weak
 gcvA	2941650	2942567	reverse	1	gcvA		
 gcvB	2942696	2942900	forward	1	gcvB	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 gcvR	2599906	2600478	forward	1	gcvR	[IMP|W|Inferred from mutant phenotype],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -600,7 +605,7 @@ glk	2508461	2509426	reverse	1	glk	[BTEI|W|Boundaries of transcription experiment
 glmUS	3911839	3915200	reverse	2	glmU,glmS	[PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined]	Strong
 glmY	2691157	2691340	reverse	1	glmY	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 glmZ	3986432	3986603	forward	1	glmZ	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
-glnALG	4053869	4058034	reverse	3	glnA,glnL,glnG	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+glnALG	4053869	4058034	reverse	3	glnA,glnL,glnG	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 glnHPQ	845741	848004	reverse	3	glnH,glnP,glnQ		
 glnK-amtB	472598	474252	forward	2	glnK,amtB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 glnS	706093	707757	forward	1	glnS	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
@@ -612,8 +617,10 @@ glpFKX	4114569	4118090	reverse	3	glpF,glpK,glpX	[BTEI|W|Boundaries of transcript
 glpTQ	2349935	2352374	reverse	2	glpT,glpQ		
 glrK	2689671	2691098	reverse	1	glrK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 glrR-glnB	2687070	2688803	reverse	2	glrR,glnB	[LTED|S|Length of transcript experimentally determined]; [IHBCE|W|Inferred by a human based on computational evidence]	Strong
+glsA-ybaT	511641	513868	forward	2	glsA,ybaT	[IHBCE|W|Inferred by a human based on computational evidence],[IEP|W|Inferred from expression pattern]	Weak
+glsB-yneG	1611966	1613251	reverse	2	glsB,yneG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 gltA	753185	754468	reverse	1	gltA	[LTED|S|Length of transcript experimentally determined]	Strong
-gltBDF	3354632	3361940	forward	3	gltB,gltD,gltF	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+gltBDF	3354725	3361940	forward	3	gltB,gltD,gltF	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 gltI-sroC-gltJKL	684530	687747	reverse	5	gltI,sroC,gltJ,gltK,gltL		
 gltP	4294481	4295794	forward	1	gltP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 gltS	3827460	3828665	reverse	1	gltS	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -623,7 +630,7 @@ glyA	2684254	2685507	reverse	1	glyA
 glyQS	3722328	3725318	reverse	2	glyQ,glyS	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 glyU	2998984	2999057	reverse	1	glyU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 glyVXY	4392360	4392658	forward	3	glyV,glyX,glyY	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-glyW-cysT-leuZ-3'ETS<sup><i>leuZ</i></sup>	1991748	1992117	reverse	4	glyW,cysT,leuZ,3'ETS<sup><i>leuZ</i></sup>	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+glyW-cysT-leuZ-3'ETS	1991748	1992117	reverse	4	glyW,cysT,leuZ,3'ETS	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 gmhB	222833	223408	forward	1	gmhB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 gmk	3821428	3822051	forward	1	gmk	[ICWHO|W|Inferred computationally without human oversight]	Weak
 gnd	2099862	2101268	reverse	1	gnd	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -631,12 +638,12 @@ gnsB	1637609	1637782	reverse	1	gnsB	[ICWHO|W|Inferred computationally without hu
 gntP	4549953	4551296	reverse	1	gntP	[LTED|S|Length of transcript experimentally determined]	Strong
 gntRKU	3575721	3578726	reverse	3	gntR,gntK,gntU	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 gntT	3546559	3547875	forward	1	gntT	[LTED|S|Length of transcript experimentally determined]	Strong
-gntX-nfuA	3544882	3546199	forward	2	gntX,nfuA	[BTEI|W|Boundaries of transcription experimentally identified]	
 gor	3646299	3647651	forward	1	gor	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 gpmA	786843	787595	reverse	1	gpmA		
 gpmM-envC-yibQ	3785260	3789060	forward	3	gpmM,envC,yibQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 gpp	3962745	3964229	reverse	1	gpp	[ICWHO|W|Inferred computationally without human oversight]	Weak
-gpt	255977	256435	forward	1	gpt	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+gpr	3147897	3148937	forward	1	gpr	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+gpt	255977	256435	forward	1	gpt	[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 grcA	2716066	2716449	reverse	1	grcA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 greA	3328239	3328715	reverse	1	greA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 greB	3536812	3537288	forward	1	greB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -661,7 +668,9 @@ hcaEFCBD	2669032	2673249	forward	5	hcaE,hcaF,hcaC,hcaB,hcaD	[ITCR|W|Inferred thr
 hcaR	2668006	2668896	reverse	1	hcaR		
 hcaT	2666707	2667846	reverse	1	hcaT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hchA	2035835	2036686	forward	1	hchA	[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-hcp-hcr	911182	913814	reverse	2	hcp,hcr	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]	Strong
+hcp-hcr-poxB-ltaE-ybjT	906852	913814	reverse	5	hcp,hcr,poxB,ltaE,ybjT	[ITCR|W|Inferred through co-regulation]; [ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]; [ICWHO|W|Inferred computationally without human oversight]; [IC|W|Inferred by curator]; [IEP|W|Inferred from expression pattern]	Weak
+hcxA	632389	633477	reverse	1	hcxA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+hcxB	836351	837436	forward	1	hcxB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hda	2618075	2618776	reverse	1	hda	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 hdeAB-yhiD	3655255	3656740	reverse	3	hdeA,hdeB,yhiD	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 hdeD	3656995	3657567	forward	1	hdeD		
@@ -669,14 +678,14 @@ hdfR	3947128	3947967	reverse	1	hdfR	[AISGDTU|W|Automated inference that a single
 hdhA	1697273	1698040	reverse	1	hdhA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 helD	1024471	1026525	forward	1	helD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 hemA-prfA-prmC	1263714	1266927	forward	3	hemA,prfA,prmC	[LTED|S|Length of transcript experimentally determined]	Strong
-hemB	388753	389727	reverse	1	hemB	[ICWHO|W|Inferred computationally without human oversight]	Weak
+hemB	388753	389727	reverse	1	hemB	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 hemCDXY	3986686	3990766	reverse	4	hemC,hemD,hemX,hemY		
 hemH	498055	499017	forward	1	hemH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hemL	173602	174882	reverse	1	hemL	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 hemN	4052045	4053418	forward	1	hemN	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 hflD-purB	1190616	1192631	reverse	2	hflD,purB	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 hicAB	1509286	1509924	forward	2	hicA,hicB	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
-higBA	3233728	3234455	reverse	2	higB,higA	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
+higBA	3233728	3234455	reverse	2	higB,higA	[PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[IBAA|W|Inferred from Biological aspect from Ancestor]	Strong
 hinT-ycfL-lpoB-thiK-nagZ-ycfP	1161885	1165685	forward	6	hinT,ycfL,lpoB,thiK,nagZ,ycfP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hipBA	1590854	1592442	reverse	2	hipB,hipA	[ITCR|W|Inferred through co-regulation]	Weak
 hisLGDCBHAFI	2089996	2097225	forward	9	hisL,hisG,hisD,hisC,hisB,hisH,hisA,hisF,hisI	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -692,23 +701,24 @@ hokE	607836	607988	forward	1	hokE	[LTED|S|Length of transcript experimentally de
 holC-valS	4480982	4484280	reverse	2	holC,valS	[ITCR|W|Inferred through co-regulation]; [BTEI|W|Boundaries of transcription experimentally identified]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
 holD-rimI-yjjG	4607803	4609323	forward	3	holD,rimI,yjjG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 holE	1925108	1925338	forward	1	holE	[ICWHO|W|Inferred computationally without human oversight]	Weak
+hprRS	2036794	2038823	reverse	2	hprR,hprS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hpt	141431	141967	forward	1	hpt		
-hrpA	1483118	1486963	forward	1	hrpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+hrpA	1483061	1486963	forward	1	hrpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hrpB	162105	164534	forward	1	hrpB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hscBA-fdx-iscX	2656536	2659467	reverse	4	hscB,hscA,fdx,iscX	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 hscC	681723	683393	reverse	1	hscC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-hsdRMS	4580068	4586815	reverse	3	hsdR,hsdM,hsdS	[PAGTSBP|W|Products of adjacent genes in the same biological process],[IHBCE|W|Inferred by a human based on computational evidence]	
+hsdRMS	4580068	4586761	reverse	3	hsdR,hsdM,hsdS	[PAGTSBP|W|Products of adjacent genes in the same biological process],[IHBCE|W|Inferred by a human based on computational evidence]	
 hslJ	1441321	1441743	reverse	1	hslJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hslVU	4120416	4122287	reverse	2	hslV,hslU	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 hspQ	1028404	1028721	reverse	1	hspQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-htgA	10830	11315	forward	1	htgA	[LTED|S|Length of transcript experimentally determined]	Strong
 htpG	495120	496994	forward	1	htpG	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 htpX	1911695	1912576	reverse	1	htpX	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 htrL	3792826	3793683	reverse	1	htrL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hupA	4200281	4200553	forward	1	hupA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 hupB	461451	461723	forward	1	hupB	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+hxpB	1809380	1810048	forward	1	hxpB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 hyaABCDEF	1032139	1037606	forward	6	hyaA,hyaB,hyaC,hyaD,hyaE,hyaF	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-hybOABCDEFG	3139716	3146261	reverse	8	hybO,hybA,hybB,hybC,hybD,hybE,hybF,hybG	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Strong
+hybOABCDEFG	3139716	3146261	reverse	8	hybO,hybA,hybB,hybC,hybD,hybE,hybF,hybG	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 hycABCDEFGHI	2842573	2850435	reverse	9	hycA,hycB,hycC,hycD,hycE,hycF,hycG,hycH,hycI	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 hydN-hypF	2835173	2838105	reverse	2	hydN,hypF	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Weak
 hyfABCDEFGHIJR-focB	2601201	2614782	forward	12	hyfA,hyfB,hyfC,hyfD,hyfE,hyfF,hyfG,hyfH,hyfI,hyfJ,hyfR,focB	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
@@ -720,7 +730,7 @@ iap	2876581	2877618	forward	1	iap	[AISGDTU|W|Automated inference that a single-g
 ibaG-murA	3335235	3336803	reverse	2	ibaG,murA	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 ibpAB	3866469	3867422	reverse	2	ibpA,ibpB	[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 icd	1195123	1196373	forward	1	icd	[ITCR|W|Inferred through co-regulation]	Weak
-icdC	1211425	1211577	forward	1	icdC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+icdC	1211413	1211577	forward	1	icdC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 iclR	4222804	4223628	reverse	1	iclR		
 idi	3033065	3033613	forward	1	idi	[ICWHO|W|Inferred computationally without human oversight]	Weak
 idnDOTR	4490141	4494406	reverse	4	idnD,idnO,idnT,idnR	[LTED|S|Length of transcript experimentally determined]	Strong
@@ -732,7 +742,7 @@ ilvIH	85630	87848	forward	2	ilvI,ilvH	[LTED|S|Length of transcript experimentall
 ilvLXG_1G_2MEDA	3950322	3956875	forward	8	ilvL,ilvX,ilvG_1,ilvG_2,ilvM,ilvE,ilvD,ilvA	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ilvY	3956927	3957820	reverse	1	ilvY		
 inaA	2348822	2349472	reverse	1	inaA		
-infA	926225	926443	reverse	1	infA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+infA-serW	925884	926443	reverse	2	infA,serW	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 insA-4AB-4B-4	1049833	1050530	forward	3	insA-4,insAB-4,insB-4	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insA-7	4518527	4518802	forward	1	insA-7	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 insAB-1A-1B-1	19811	20508	reverse	3	insA-1,insAB-1,insB-1	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -740,16 +750,16 @@ insAB-2A-2B-2-afuBC	277756	279875	reverse	5	insA-2,insAB-2,insB-2,afuB,afuC	[ICW
 insAB-3A-3B-3	290649	291346	reverse	3	insA-3,insAB-3,insB-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insAB-5A-5B-5	1978518	1979215	reverse	3	insA-5,insAB-5,insB-5	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insB-7_1B-7_2	4518721	4519224	forward	2	insB-7_1,insB-7_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insC-1CD-1D-1	381306	382579	forward	3	insC-1,insCD-1,insD-1	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insC-5CD-5D-5-yqiGHI	3186142	3191696	forward	6	insC-5,insCD-5,insD-5,yqiG,yqiH,yqiI	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
-insC-6CD-6D-6	4498227	4499500	forward	3	insC-6,insCD-6,insD-6	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insCD-2C-2D-2	1467921	1469194	reverse	3	insC-2,insCD-2,insD-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insCD-3C-3D-3	2068952	2070225	reverse	3	insC-3,insCD-3,insD-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insCD-4C-4D-4-ygeONM	2995314	2997645	reverse	6	insC-4,insCD-4,insD-4,ygeO,ygeN,ygeM	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insE-3EF-3F-3	566833	568004	forward	3	insE-3,insEF-3,insF-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insE-5EF-5F-5	2170227	2171398	forward	3	insE-5,insEF-5,insF-5	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insEF-2E-2F-2	391739	392910	reverse	3	insE-2,insEF-2,insF-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-insEF-4E-4F-4	1094275	1095446	reverse	3	insE-4,insEF-4,insF-4	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insC-1CD-1D-1	381351	382579	forward	3	insC-1,insCD-1,insD-1	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insC-5CD-5D-5-yqiGHI	3186187	3191696	forward	6	insC-5,insCD-5,insD-5,yqiG,yqiH,yqiI	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
+insC-6CD-6D-6	4498272	4499500	forward	3	insC-6,insCD-6,insD-6	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insCD-2C-2D-2	1467921	1469149	reverse	3	insC-2,insCD-2,insD-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insCD-3C-3D-3	2068952	2070180	reverse	3	insC-3,insCD-3,insD-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insCD-4C-4D-4-ygeONM	2995314	2997600	reverse	6	insC-4,insCD-4,insD-4,ygeO,ygeN,ygeM	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insE-3EF-3F-3	566842	568004	forward	3	insE-3,insEF-3,insF-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insE-5EF-5F-5	2170236	2171398	forward	3	insE-5,insEF-5,insF-5	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insEF-2E-2F-2	391739	392901	reverse	3	insE-2,insEF-2,insF-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insEF-4E-4F-4	1094275	1095437	reverse	3	insE-4,insEF-4,insF-4	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insG	4502103	4503431	reverse	1	insG	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 insH-1	274101	275117	reverse	1	insH-1	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 insH-10	3365702	3366718	reverse	1	insH-10	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -764,7 +774,7 @@ insH-8	2289065	2290081	reverse	1	insH-8	[AISGDTU|W|Automated inference that a si
 insH-9	3130178	3131194	forward	1	insH-9	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 insI-2	1469358	1470509	forward	1	insI-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insJ	3720680	3721201	forward	1	insJ	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
-insK	3721154	3722049	forward	1	insK	[LTED|S|Length of transcript experimentally determined]	Strong
+insK	3721198	3722049	forward	1	insK	[LTED|S|Length of transcript experimentally determined]	Strong
 insL-1	15445	16557	forward	1	insL-1	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insL-2	608065	609177	forward	1	insL-2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insL-3	2514331	2515443	forward	1	insL-3	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -772,25 +782,25 @@ insMI-3	4507466	4508942	reverse	2	insM,insI-3	[ICWHO|W|Inferred computationally 
 insN-1I-1O-1	270242	272255	forward	3	insN-1,insI-1,insO-1	[ICWHO|W|Inferred computationally without human oversight]	Weak
 insN-2	4507197	4507463	forward	1	insN-2	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 insO-2-yjhWV	4508958	4510133	forward	3	insO-2,yjhW,yjhV	[ICWHO|W|Inferred computationally without human oversight]	Weak
+insQ	1503717	1504865	forward	1	insQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 intA	2756159	2757400	forward	1	intA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 intB	4496750	4497940	forward	1	intB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 intD	564815	565978	reverse	1	intD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 intF	295696	297096	reverse	1	intF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 intG	2012502	2012780	forward	1	intG	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 intS	2466545	2467702	forward	1	intS	[ICWHO|W|Inferred computationally without human oversight]	Weak
-intZ	2558771	2560066	forward	1	intZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-iraD	4556993	4557385	forward	1	iraD	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
+intZ	2558858	2560066	forward	1	intZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
+iprA	394506	395129	forward	1	iprA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 iraM	1211680	1212003	reverse	1	iraM	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 iraP	401386	401646	forward	1	iraP	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Weak
-iscRSUA	2659563	2662131	reverse	4	iscR,iscS,iscU,iscA	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Strong
+iscRSUA	2659563	2662131	reverse	4	iscR,iscS,iscU,iscA	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 ispB	3333710	3334681	forward	1	ispB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ispDF	2871301	2872490	reverse	2	ispD,ispF	[PAGTSBP|W|Products of adjacent genes in the same biological process],[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 ispG-sroE	2640595	2641804	reverse	2	ispG,sroE	[LTED|S|Length of transcript experimentally determined]	Strong
 ispU	194903	195664	forward	1	ispU	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 isrB	1987839	1987998	reverse	1	isrB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 isrC-flu	2071317	2074658	forward	2	isrC,flu	[IC|W|Inferred by curator]; [BTEI|W|Boundaries of transcription experimentally identified]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
-istR-1	3853118	3853192	reverse	1	istR-1	[LTED|S|Length of transcript experimentally determined]	Strong
-istR-2	3853118	3853257	reverse	1	istR-2	[LTED|S|Length of transcript experimentally determined]	Strong
+istR	3853118	3853257	reverse	1	istR	[LTED|S|Length of transcript experimentally determined]	Strong
 ivbL-ilvBN-uhpABC	3847305	3852988	reverse	6	ivbL,ilvB,ilvN,uhpA,uhpB,uhpC	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 ivy	240343	240816	forward	1	ivy	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]; [IC|W|Inferred by curator]	Weak
 katE	1813867	1816128	forward	1	katE	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -813,7 +823,7 @@ kptA	4560930	4561484	forward	1	kptA	[AISGDTU|W|Automated inference that a single
 kup	3931316	3933184	forward	1	kup	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lacZYA	361249	366305	reverse	3	lacZ,lacY,lacA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 lafU	250072	250827	forward	1	lafU	[ICWHO|W|Inferred computationally without human oversight]	Weak
-lapAB-pyrF-yciH	1340243	1342984	forward	4	lapA,lapB,pyrF,yciH	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
+lapAB-pyrF-yciH	1340243	1342984	forward	4	lapA,lapB,pyrF,yciH	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 ldcA	1242166	1243080	reverse	1	ldcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ldcC	209679	211820	forward	1	ldcC	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ldhA	1441854	1442843	reverse	1	ldhA		
@@ -829,7 +839,7 @@ ldtE	1757721	1758725	reverse	1	ldtE	[ICWHO|W|Inferred computationally without hu
 lepAB	2704335	2707124	reverse	2	lepA,lepB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 leuE	1880121	1880759	reverse	1	leuE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 leuLABCD	78848	83708	reverse	5	leuL,leuA,leuB,leuC,leuD	[BTEI|W|Boundaries of transcription experimentally identified]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
-leuO	84368	85312	forward	1	leuO	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Weak
+leuO	84368	85312	forward	1	leuO	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Strong
 leuQPV	4606079	4606401	reverse	3	leuQ,leuP,leuV	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 leuS-lptE-holA-nadD-cobC	669296	674783	reverse	5	leuS,lptE,holA,nadD,cobC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 leuX	4496405	4496489	forward	1	leuX	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -838,7 +848,7 @@ lfhA	248358	250070	reverse	1	lfhA	[AISGDTU|W|Automated inference that a single-g
 lgoD	4595990	4597012	forward	1	lgoD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 lgoR	4594937	4595851	reverse	1	lgoR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lgoT	4593361	4594722	reverse	1	lgoT	[ICWHO|W|Inferred computationally without human oversight]	Weak
-lgt-thyA	2964361	2966037	reverse	2	lgt,thyA		
+lgt-thyA	2964361	2966037	reverse	2	lgt,thyA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ligA-ypeB	2527941	2530176	reverse	2	ligA,ypeB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ligB	3819488	3821170	reverse	1	ligB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 lipA	659251	660216	reverse	1	lipA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -847,14 +857,14 @@ livJ	3598555	3599658	reverse	1	livJ	[BTEI|W|Boundaries of transcription experime
 livKHMGF	3592724	3597560	reverse	5	livK,livH,livM,livG,livF	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 lldPRD	3777399	3781017	forward	3	lldP,lldR,lldD	[ITCR|W|Inferred through co-regulation]	Weak
 loiP	3081913	3082671	forward	1	loiP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-lolA-rarA	937369	939337	forward	2	lolA,rarA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-lolB-ispE-prs	1260928	1263500	reverse	3	lolB,ispE,prs	[IEP|W|Inferred from expression pattern]	
+lolA-rarA	937372	939337	forward	2	lolA,rarA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+lolB-ispE-prs	1260928	1263500	reverse	3	lolB,ispE,prs	[IEP|W|Inferred from expression pattern]	Weak
 lolCDE	1175427	1178564	forward	3	lolC,lolD,lolE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lomR_2-stfR-tfaR	1428814	1432986	forward	3	lomR_2,stfR,tfaR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lpcA	243543	244121	forward	1	lpcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lpoA	3293400	3295436	forward	1	lpoA	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 lpp	1757421	1757657	forward	1	lpp	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-lptD-surA-pdxA-rsmA-apaGH	50380	57109	reverse	6	lptD,surA,pdxA,rsmA,apaG,apaH	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+lptD-surA-pdxA-rsmA-apaGH	50380	57109	reverse	6	lptD,surA,pdxA,rsmA,apaG,apaH	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	
 lptFG	4486218	4488400	forward	2	lptF,lptG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 lpxL	1115662	1116582	reverse	1	lpxL	[LTED|S|Length of transcript experimentally determined]	Strong
 lpxM	1939222	1940193	reverse	1	lpxM	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -888,10 +898,12 @@ malXY	1699355	1702129	forward	2	malX,malY	[BTEI|W|Boundaries of transcription ex
 malZ	422518	424332	forward	1	malZ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 manA	1688576	1689751	forward	1	manA	[IHBCE|W|Inferred by a human based on computational evidence],[LTED|S|Length of transcript experimentally determined]	Strong
 manXYZ	1902048	1904746	forward	3	manX,manY,manZ		
+maoP	3948086	3948424	forward	1	maoP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 map-glnD-dapD	185123	189506	reverse	3	map,glnD,dapD	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Strong
 marC	1618243	1618908	reverse	1	marC	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 marRAB	1619120	1620207	forward	3	marR,marA,marB	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Strong
 matP	1018485	1018937	forward	1	matP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+mbiA	10830	11315	forward	1	mbiA	[LTED|S|Length of transcript experimentally determined]	Strong
 mcaS	1405659	1405751	reverse	1	mcaS	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 mcbA	841796	842056	reverse	1	mcbA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mcbR	1520262	1520927	forward	1	mcbR	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -912,7 +924,7 @@ mdtNOP	4299564	4304109	reverse	3	mdtN,mdtO,mdtP	[ICWHO|W|Inferred computationall
 mdtQ	2227323	2228411	reverse	1	mdtQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 melAB	4341911	4344790	forward	2	melA,melB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 melR	4340720	4341628	reverse	1	melR	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-menA-rraA	4118845	4120349	reverse	2	menA,rraA	[LTED|S|Length of transcript experimentally determined]; [IC|W|Inferred by curator]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+menA-rraA	4118845	4120349	reverse	2	menA,rraA	[IC|W|Inferred by curator]; [LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 menFDHBCE	2373648	2380643	reverse	6	menF,menD,menH,menB,menC,menE		
 mepH	1734435	1735250	forward	1	mepH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mepM	1940313	1941635	reverse	1	mepM	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
@@ -929,7 +941,7 @@ metK	3086706	3087860	forward	1	metK	[ICWHO|W|Inferred computationally without hu
 metNIQ	220113	222645	reverse	3	metN,metI,metQ	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern]	Weak
 metR	4011863	4012816	reverse	1	metR		
 metT-leuW-glnUW-metU-glnVX	696430	697133	reverse	7	metT,leuW,glnU,glnW,metU,glnV,glnX	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
-metY-rimP-nusA-infB-rbfA-truB-rpsO-pnp	3309033	3318289	reverse	8	metY,rimP,nusA,infB,rbfA,truB,rpsO,pnp	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Weak
+metY-rimP-nusA-infB-rbfA-truB-rpsO-pnp	3309033	3318289	reverse	8	metY,rimP,nusA,infB,rbfA,truB,rpsO,pnp	[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Weak
 metZWV	2947387	2947683	forward	3	metZ,metW,metV	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 mfd	1170518	1173964	reverse	1	mfd	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mglBAC	2236743	2240348	reverse	3	mglB,mglA,mglC	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]	Weak
@@ -937,6 +949,7 @@ mgrB	1908623	1908766	reverse	1	mgrB	[ICWHO|W|Inferred computationally without hu
 mgrR	1622817	1622914	reverse	1	mgrR	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 mgsA	1026557	1027015	reverse	1	mgsA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mgtLA	4467431	4470321	forward	2	mgtL,mgtA		
+mgtS	1622646	1622741	forward	1	mgtS	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 mhpABCDFE	368611	374881	forward	6	mhpA,mhpB,mhpC,mhpD,mhpF,mhpE	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern]	Weak
 mhpR-lacI	366428	368420	reverse	2	mhpR,lacI	[ICWHO|W|Inferred computationally without human oversight]	
 mhpT	375459	376670	forward	1	mhpT	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -944,11 +957,11 @@ miaB	693531	694955	reverse	1	miaB	[ICWHO|W|Inferred computationally without huma
 micA	2814802	2814873	forward	1	micA	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 micC	1437121	1437229	forward	1	micC	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 micF	2313084	2313176	forward	1	micF	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
-micL	1958441	1958520	reverse	1	micL	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+micL	1958441	1958520	reverse	1	micL	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Strong
 minCDE	1224279	1226080	reverse	3	minC,minD,minE		
 mipA	1865726	1866472	reverse	1	mipA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mlaA	2464252	2465007	reverse	1	mlaA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-mlaFEDCB	3336963	3340065	reverse	5	mlaF,mlaE,mlaD,mlaC,mlaB	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
+mlaFEDCB	3336963	3340065	reverse	5	mlaF,mlaE,mlaD,mlaC,mlaB	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
 mlc-ynfK	1666524	1668564	reverse	2	mlc,ynfK	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 mliC	1718066	1718395	reverse	1	mliC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mlrA	2214866	2215597	forward	1	mlrA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -976,8 +989,7 @@ mog	9306	9893	forward	1	mog	[ICWHO|W|Inferred computationally without human over
 mokB	1491962	1492129	reverse	1	mokB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mokC-hokC	16751	16960	reverse	2	mokC,hokC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 molR_1	2196474	2197298	forward	1	molR_1	[LTED|S|Length of transcript experimentally determined]	Strong
-molR_2	2197410	2199347	forward	1	molR_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-molR_3-yehI	2199322	2203911	forward	2	molR_3,yehI	[ICWHO|W|Inferred computationally without human oversight]	Weak
+molR_2R_3-yehI	2197410	2203911	forward	3	molR_2,molR_3,yehI	[IC|W|Inferred by curator],[ICWHO|W|Inferred computationally without human oversight]	Weak
 motAB-cheAW	1972836	1977139	reverse	4	motA,motB,cheA,cheW		
 mpl	4455785	4457158	forward	1	mpl		
 mppA	1393227	1394840	forward	1	mppA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -987,7 +999,7 @@ mqsRA	3167851	3168544	reverse	2	mqsR,mqsA	[LTED|S|Length of transcript experimen
 mraZ-rsmH-ftsLI-murEF-mraY-murD-ftsW-murGC-ddlB-ftsQAZ-lpxC	89634	107474	forward	16	mraZ,rsmH,ftsL,ftsI,murE,murF,mraY,murD,ftsW,murG,murC,ddlB,ftsQ,ftsA,ftsZ,lpxC	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [IEP|W|Inferred from expression pattern]; [ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[PM|S|Polar mutation]	Weak
 mrcA	3522871	3525423	forward	1	mrcA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 mrcB	164730	167264	forward	1	mrcB	[ICWHO|W|Inferred computationally without human oversight]	Weak
-mreBCD	3398387	3401087	reverse	3	mreB,mreC,mreD	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
+mreBCD	3398387	3401087	reverse	3	mreB,mreC,mreD	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
 mrp	2193059	2194168	reverse	1	mrp	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 mrr	4586949	4587863	forward	1	mrr	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 mscK	486536	489898	forward	1	mscK	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -995,8 +1007,9 @@ mscL	3438024	3438434	forward	1	mscL	[LTED|S|Length of transcript experimentally 
 mscS	3068947	3069807	reverse	1	mscS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 msrA	4441538	4442176	reverse	1	msrA	[LTED|S|Length of transcript experimentally determined]	Strong
 msrB	1862016	1862429	reverse	1	msrB	[IC|W|Inferred by curator]; [ICWHO|W|Inferred computationally without human oversight]	Weak
-msrC	1915631	1916182	reverse	1	msrC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+msrC	1915631	1916128	reverse	1	msrC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 msrPQ	2039478	2041118	forward	2	msrP,msrQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
+mstA	2652494	2653339	forward	1	mstA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 msyB	1113807	1114181	reverse	1	msyB		
 mtfA	2043651	2044448	forward	1	mtfA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mtlADR	3772281	3776159	forward	3	mtlA,mtlD,mtlR	[LTED|S|Length of transcript experimentally determined]	Strong
@@ -1008,7 +1021,7 @@ murJ	1127839	1129374	forward	1	murJ	[ICWHO|W|Inferred computationally without hu
 murQP-yfeW	2545773	2549406	forward	3	murQ,murP,yfeW	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 murR	2544752	2545609	reverse	1	murR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 mutH	2969662	2970351	forward	1	mutH	[ICWHO|W|Inferred computationally without human oversight]	Weak
-mutS	2857093	2859654	forward	1	mutS	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Confirmed
+mutS	2857093	2859654	forward	1	mutS	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 mutY-yggX-mltC-nupG	3103013	3106970	forward	4	mutY,yggX,mltC,nupG	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 nac	2061016	2061933	reverse	1	nac	[LTED|S|Length of transcript experimentally determined]	Strong
 nadA-pnuC	782085	783885	forward	2	nadA,pnuC	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1016,10 +1029,10 @@ nadB	2710420	2712042	forward	1	nadB
 nadC	117752	118645	reverse	1	nadC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 nadE	1822458	1823285	forward	1	nadE	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 nadK	2750831	2751709	forward	1	nadK	[ICWHO|W|Inferred computationally without human oversight]	Weak
-nagBAC-umpH	699574	703611	reverse	4	nagB,nagA,nagC,umpH	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	
+nagBAC-umpH	699574	703611	reverse	4	nagB,nagA,nagC,umpH	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	
 nagE	703944	705890	forward	1	nagE	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 nagK-cobB	1178593	1180359	forward	2	nagK,cobB	[ICWHO|W|Inferred computationally without human oversight],[IEP|W|Inferred from expression pattern]	Weak
-nanATEK-yhcH	3369014	3373576	reverse	5	nanA,nanT,nanE,nanK,yhcH	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Strong
+nanATEK-yhcH	3369014	3373576	reverse	5	nanA,nanT,nanE,nanK,yhcH	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 nanCMS	4536614	4539501	reverse	3	nanC,nanM,nanS	[ICWHO|W|Inferred computationally without human oversight]; [IHBCE|W|Inferred by a human based on computational evidence]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation]	Weak
 nanR	3373698	3374489	reverse	1	nanR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 napFDAGHBC-ccmABCDEFGH	2291358	2303497	reverse	15	napF,napD,napA,napG,napH,napB,napC,ccmA,ccmB,ccmC,ccmD,ccmE,ccmF,ccmG,ccmH		
@@ -1032,7 +1045,7 @@ narXL	1275179	1277618	reverse	2	narX,narL
 narZYWV	1535937	1542590	reverse	4	narZ,narY,narW,narV		
 ndh	1166085	1167389	forward	1	ndh		
 ndk	2644433	2644864	reverse	1	ndk	[ICWHO|W|Inferred computationally without human oversight]	Weak
-nemRA-gloA	1726023	1728244	forward	3	nemR,nemA,gloA	[LTED|S|Length of transcript experimentally determined]; [IHBCE|W|Inferred by a human based on computational evidence]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
+nemRA-gloA	1726023	1728244	forward	3	nemR,nemA,gloA	[LTED|S|Length of transcript experimentally determined]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [IHBCE|W|Inferred by a human based on computational evidence]	Strong
 nepI	3840549	3841739	reverse	1	nepI	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 nfo	2250840	2251697	forward	1	nfo		
 nfrBA	587982	593178	reverse	2	nfrB,nfrA		
@@ -1040,13 +1053,13 @@ nfsB	604771	605424	reverse	1	nfsB	[ICWHO|W|Inferred computationally without huma
 nhaAR	17489	19620	forward	2	nhaA,nhaR	[IHBCE|W|Inferred by a human based on computational evidence]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined]	Strong
 nhaB	1233176	1234717	reverse	1	nhaB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 nhoA	1534024	1534869	forward	1	nhoA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-nikABCDER	3613667	3618989	forward	6	nikA,nikB,nikC,nikD,nikE,nikR	[ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]; [ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]	Strong
+nikABCDER	3613667	3618989	forward	6	nikA,nikB,nikC,nikD,nikE,nikR	[ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 nimR	1874755	1875576	reverse	1	nimR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 nimT	1875673	1876854	forward	1	nimT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 nirBDC-cysG	3494011	3499201	forward	4	nirB,nirD,nirC,cysG	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 nlpA	3839175	3839993	reverse	1	nlpA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 nlpC	1792267	1792731	reverse	1	nlpC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-nlpD-rpoS	2866559	2868753	reverse	2	nlpD,rpoS	[PM|S|Polar mutation]; [IC|W|Inferred by curator]	Weak
+nlpD-rpoS	2866559	2868753	reverse	2	nlpD,rpoS	[IC|W|Inferred by curator]; [PM|S|Polar mutation]	Weak
 nlpI	3308040	3308924	reverse	1	nlpI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 nmpC	575758	576825	reverse	1	nmpC	[LTED|S|Length of transcript experimentally determined]	Strong
 nohA-ydfN-tfaQ	1634310	1636367	reverse	3	nohA,ydfN,tfaQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1056,7 +1069,7 @@ norVW	2832476	2835045	forward	2	norV,norW	[ITCR|W|Inferred through co-regulation
 nrdAB-yfaE	2344865	2348768	forward	3	nrdA,nrdB,yfaE	[IHBCE|W|Inferred by a human based on computational evidence]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 nrdDG	4459900	4462660	reverse	2	nrdD,nrdG	[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation]	Weak
 nrdHIEF	2800723	2804461	forward	4	nrdH,nrdI,nrdE,nrdF	[LTED|S|Length of transcript experimentally determined]	Strong
-nrdR-ribDE-nusB-thiL-pgpA	433002	437107	forward	6	nrdR,ribD,ribE,nusB,thiL,pgpA	[ITCR|W|Inferred through co-regulation]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]	Strong
+nrdR-ribDE-nusB-thiL-pgpA	433002	437107	forward	6	nrdR,ribD,ribE,nusB,thiL,pgpA	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]; [ITCR|W|Inferred through co-regulation]	Weak
 nrfABCDEFG	4287764	4294139	forward	7	nrfA,nrfB,nrfC,nrfD,nrfE,nrfF,nrfG		
 nsrR-rnr-rlmB-yjfIJ	4406190	4411251	forward	5	nsrR,rnr,rlmB,yjfI,yjfJ	[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined]	Strong
 nudB-yebC-ruvC	1946855	1948632	reverse	3	nudB,yebC,ruvC	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -1097,7 +1110,7 @@ osmY	4611396	4612001	forward	1	osmY
 otsBA	1980188	1982387	reverse	2	otsB,otsA	[PM|S|Polar mutation]	Strong
 oxyR	4158490	4159407	forward	1	oxyR		
 oxyS	4158285	4158394	reverse	1	oxyS	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-paaABCDEFGHIJK	1453927	1463438	forward	11	paaA,paaB,paaC,paaD,paaE,paaF,paaG,paaH,paaI,paaJ,paaK	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Strong
+paaABCDEFGHIJK	1453927	1463438	forward	11	paaA,paaB,paaC,paaD,paaE,paaF,paaG,paaH,paaI,paaJ,paaK	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 paaXY	1463539	1465061	forward	2	paaX,paaY	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 paaZ	1451597	1453642	reverse	1	paaZ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 pabB-nudL	1894805	1896748	forward	2	pabB,nudL	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1122,13 +1135,14 @@ pdeF	2626695	2628938	reverse	1	pdeF	[AISGDTU|W|Automated inference that a single
 pdeG	1217328	1218851	forward	1	pdeG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdeH	3678420	3679187	reverse	1	pdeH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdeI-dgcI	872979	876663	forward	2	pdeI,dgcI	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
-pdeK	3683630	3685579	reverse	1	pdeK	[ICWHO|W|Inferred computationally without human oversight]	Weak
+pdeK	3683630	3685618	reverse	1	pdeK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdeL	332371	333459	forward	1	pdeL	[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 pdeN	2270726	2272282	forward	1	pdeN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdeR	1344757	1346742	reverse	1	pdeR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdhR-aceEF-lpd	122092	129336	forward	4	pdhR,aceE,aceF,lpd	[LTED|S|Length of transcript experimentally determined]	Strong
 pdxB-usg-truA-dedA	2434082	2437851	reverse	4	pdxB,usg,truA,dedA	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
-pdxH-tyrS-pdxY	1715026	1718007	reverse	3	pdxH,tyrS,pdxY	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+pdxH-tyrS-pdxY	1715026	1718007	reverse	3	pdxH,tyrS,pdxY	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]; [LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
+pdxI	1474221	1475081	forward	1	pdxI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pdxK	2536386	2537237	reverse	1	pdxK	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 pepA	4484440	4485951	reverse	1	pepA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pepB	2655075	2656358	reverse	1	pepB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1160,7 +1174,7 @@ phoE	259045	260100	reverse	1	phoE
 phoH	1084992	1086056	forward	1	phoH	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 phoPQ	1188316	1190447	reverse	2	phoP,phoQ	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator]	Weak
 pinE	1209685	1210239	forward	1	pinE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-pinH	2783065	2783208	reverse	1	pinH	[ICWHO|W|Inferred computationally without human oversight]	Weak
+pinH	2783065	2783304	reverse	1	pinH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pinQ	1633622	1634212	forward	1	pinQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pinR	1433084	1433674	reverse	1	pinR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pitA	3637642	3639141	forward	1	pitA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -1171,6 +1185,7 @@ pldB-yigL	4009170	4011000	forward	2	pldB,yigL	[ICWHO|W|Inferred computationally 
 pliG	1227071	1227472	reverse	1	pliG	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 plsB	4254043	4256466	reverse	1	plsB	[BTEI|W|Boundaries of transcription experimentally identified]; [AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 plsC	3162744	3163481	reverse	1	plsC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+plsY	3204694	3205311	forward	1	plsY	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 pmbA	4457959	4459311	forward	1	pmbA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pmrD	2373272	2373538	reverse	1	pmrD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pncB	989154	990356	reverse	1	pncB		
@@ -1180,7 +1195,6 @@ polA	4046966	4049752	forward	1	polA	[ICWHO|W|Inferred computationally without hu
 polB	63429	65780	reverse	1	polB		
 potABCD	1181783	1185594	reverse	4	potA,potB,potC,potD		
 potFGHI	893784	897929	forward	4	potF,potG,potH,potI	[LTED|S|Length of transcript experimentally determined]	Strong
-poxB-ltaE-ybjT	906852	911049	reverse	3	poxB,ltaE,ybjT	[ICWHO|W|Inferred computationally without human oversight]; [IC|W|Inferred by curator]; [IEP|W|Inferred from expression pattern]	Weak
 ppa	4449122	4449652	reverse	1	ppa	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ppc	4150447	4153098	reverse	1	ppc	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ppdAB-ygdB-ppdC-recC	2959060	2964177	reverse	5	ppdA,ppdB,ygdB,ppdC,recC	[ICWHO|W|Inferred computationally without human oversight]	
@@ -1192,11 +1206,13 @@ ppiB-lpxH	553218	554437	reverse	2	ppiB,lpxH	[ICWHO|W|Inferred computationally wi
 ppiC	3959532	3959813	reverse	1	ppiC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ppiD	461915	463786	forward	1	ppiD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ppk-ppx	2623044	2626656	forward	2	ppk,ppx	[ITCR|W|Inferred through co-regulation]; [PM|S|Polar mutation]	Strong
+ppnN	2926308	2927672	forward	1	ppnN	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ppnP	408177	408461	forward	1	ppnP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pppA	3113543	3114352	reverse	1	pppA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ppsA	1784734	1787112	reverse	1	ppsA		
 ppsR	1787445	1788278	forward	1	ppsR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pptA	1533052	1533285	forward	1	pptA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-pqiAB	1012001	1014899	forward	2	pqiA,pqiB		
+pqiABC	1012001	1015459	forward	3	pqiA,pqiB,pqiC	[IHBCE|W|Inferred by a human based on computational evidence]; [PM|S|Polar mutation]	Strong
 pqqL	1572407	1575202	reverse	1	pqqL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 preTA	2234033	2236500	forward	2	preT,preA	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
 prfC	4609414	4611003	forward	1	prfC	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1221,9 +1237,8 @@ psiE	4240325	4240735	forward	1	psiE
 pspABCDE	1368079	1370003	forward	5	pspA,pspB,pspC,pspD,pspE	[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 pspF	1366935	1367912	reverse	1	pspF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 pspG	4262840	4263082	forward	1	pspG	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-psrO	3311225	3311398	forward	1	psrO	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 pssA	2722727	2724082	forward	1	pssA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-pstSCAB-phoU	3906853	3911525	reverse	5	pstS,pstC,pstA,pstB,phoU	[BTEI|W|Boundaries of transcription experimentally identified]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined]	
+pstSCAB-phoU	3906853	3911525	reverse	5	pstS,pstC,pstA,pstB,phoU	[BTEI|W|Boundaries of transcription experimentally identified]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined]	Strong
 psuKG	2257429	2259296	reverse	2	psuK,psuG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 psuT	2256085	2257335	reverse	1	psuT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pth-ychF	1256721	1258513	reverse	2	pth,ychF	[LTED|S|Length of transcript experimentally determined]	Strong
@@ -1240,7 +1255,7 @@ purL	2691656	2695543	reverse	1	purL
 purMN	2621197	2622872	forward	2	purM,purN		
 purR	1737844	1738869	forward	1	purR		
 purT	1930881	1932059	forward	1	purT	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-purU	1287782	1288624	reverse	1	purU	[IC|W|Inferred by curator]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+purU	1287782	1288624	reverse	1	purU	[ICWHO|W|Inferred computationally without human oversight]; [IC|W|Inferred by curator]	Weak
 putA	1074920	1078882	reverse	1	putA		
 putP	1079305	1080813	forward	1	putP	[BTEI|W|Boundaries of transcription experimentally identified]	
 puuAP	1357802	1360908	reverse	2	puuA,puuP	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1253,9 +1268,10 @@ pyrG-eno	2906643	2909666	reverse	2	pyrG,eno	[BTEI|W|Boundaries of transcription 
 pyrH	191855	192580	forward	1	pyrH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 pyrLBI	4470986	4472533	reverse	3	pyrL,pyrB,pyrI	[ITCR|W|Inferred through co-regulation]	Weak
 qmcA-ybbJ	514401	515773	reverse	2	qmcA,ybbJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-qor	4263248	4264231	reverse	1	qor	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+qorA	4263248	4264231	reverse	1	qorA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 qorB	4433164	4434024	reverse	1	qorB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 qseBC	3169828	3171833	forward	2	qseB,qseC	[ITCR|W|Inferred through co-regulation]	Weak
+qseG	2688793	2689506	reverse	1	qseG	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 queA	425011	426081	forward	1	queA		
 queC	464852	465547	reverse	1	queC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 queD	2892214	2892579	forward	1	queD	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1267,10 +1283,10 @@ racR	1419765	1420241	reverse	1	racR	[ICWHO|W|Inferred computationally without hu
 radD	2280632	2282392	forward	1	radD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 raiA	2737154	2737495	forward	1	raiA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ralA	1413556	1413734	forward	1	ralA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
-rapA-rluA	59687	63264	reverse	2	rapA,rluA	[IEP|W|Inferred from expression pattern]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+rapA-rluA	59687	63264	reverse	2	rapA,rluA	[ICWHO|W|Inferred computationally without human oversight]; [IEP|W|Inferred from expression pattern]	Weak
 rarD	4003288	4004178	reverse	1	rarD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ratAB	2754008	2754764	reverse	2	ratA,ratB	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ravA-viaA	3928152	3931093	reverse	2	ravA,viaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ratA-yfjF	2754008	2754764	reverse	2	ratA,yfjF	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ravA-viaA	3928152	3931093	reverse	2	ravA,viaA	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 rayT	247637	248134	forward	1	rayT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rbn	2381608	2382525	forward	1	rbn	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rbsDACBKR	3933351	3939219	forward	6	rbsD,rbsA,rbsC,rbsB,rbsK,rbsR	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -1280,7 +1296,7 @@ rclR	320227	321081	forward	1	rclR	[ICWHO|W|Inferred computationally without huma
 rcnAB	2185917	2187298	forward	2	rcnA,rcnB	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 rcnR	2185524	2185796	reverse	1	rcnR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rcsA	2023968	2024591	forward	1	rcsA	[LTED|S|Length of transcript experimentally determined]	Strong
-rcsC	2317027	2319828	reverse	1	rcsC		
+rcsC	2317027	2319876	reverse	1	rcsC		
 rcsDB	2313488	2316827	forward	2	rcsD,rcsB	[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[IHBCE|W|Inferred by a human based on computational evidence],[LTED|S|Length of transcript experimentally determined]	Strong
 rcsF-trmO	218887	219995	reverse	2	rcsF,trmO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rdgC	409108	410019	reverse	1	rdgC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -1288,7 +1304,6 @@ rdlA	1269323	1269389	forward	1	rdlA	[AISGDTU|W|Automated inference that a single
 rdlB	1269858	1269923	forward	1	rdlB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rdlC	1270393	1270460	forward	1	rdlC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rdlD	3700136	3700199	forward	1	rdlD	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
-rdoA-dsbA	4042415	4044044	forward	2	rdoA,dsbA	[BTEI|W|Boundaries of transcription experimentally identified]; [BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 recAX	2822139	2823769	reverse	2	recA,recX	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
 recET-ralR-ydaC-xisR-intR	1412000	1417386	reverse	6	recE,recT,ralR,ydaC,xisR,intR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 recN	2751795	2753456	forward	1	recN	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1296,7 +1311,7 @@ recQ	4005864	4007693	forward	1	recQ	[ICWHO|W|Inferred computationally without hu
 relA-mazEFG	2909894	2913651	reverse	4	relA,mazE,mazF,mazG	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern]	Strong
 relBE-hokD	1645119	1645872	reverse	3	relB,relE,hokD	[ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rem	1644651	1644902	reverse	1	rem	[ICWHO|W|Inferred computationally without human oversight]	Weak
-renD-emrE	568062	568647	forward	2	renD,emrE	[IHBCE|W|Inferred by a human based on computational evidence]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+renD-emrE	568062	568647	forward	2	renD,emrE	[ICWHO|W|Inferred computationally without human oversight]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
 rep	3960677	3962698	forward	1	rep	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rfaD-waaFCL	3793987	3798207	forward	4	rfaD,waaF,waaC,waaL	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rfaE	3195320	3196753	reverse	1	rfaE	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1309,7 +1324,7 @@ rhaSR	4097736	4099494	forward	2	rhaS,rhaR	[ITCR|W|Inferred through co-regulation
 rhaT	4099491	4100525	reverse	1	rhaT	[LTED|S|Length of transcript experimentally determined]	Strong
 rhlB	3964365	3965630	reverse	1	rhlB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rhlE	830872	832236	forward	1	rhlE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-rhoL-rho	3966231	3967676	forward	2	rhoL,rho	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+rhoL-rho	3966231	3967676	forward	2	rhoL,rho	[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
 rhsA-yibA	3762183	3767179	forward	2	rhsA,yibA	[ICWHO|W|Inferred computationally without human oversight]	
 rhsB	3619192	3623427	forward	1	rhsB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rhsC-ybfB	729583	734102	forward	2	rhsC,ybfB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1320,7 +1335,7 @@ rhtB	4008439	4009059	reverse	1	rhtB	[AISGDTU|W|Automated inference that a single
 rhtC	4007757	4008377	forward	1	rhtC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ribA	1338570	1339160	reverse	1	ribA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 ribC	1742601	1743242	reverse	1	ribC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ribF-ileS-lspA-fkpB-ispH	21407	27227	forward	5	ribF,ileS,lspA,fkpB,ispH	[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]; [ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern]	Weak
+ribF-ileS-lspA-fkpB-ispH	21407	27227	forward	5	ribF,ileS,lspA,fkpB,ispH	[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]; [ITCR|W|Inferred through co-regulation],[IEP|W|Inferred from expression pattern]	Weak
 ridA	4470527	4470913	reverse	1	ridA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rihA	683477	684412	reverse	1	rihA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rihB	2254245	2255186	reverse	1	rihB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1328,6 +1343,8 @@ rihC	27293	28207	forward	1	rihC	[ICWHO|W|Inferred computationally without human 
 rimJ	1125562	1126146	forward	1	rimJ		
 rimL	1498938	1499477	forward	1	rimL	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rimO	876710	878035	reverse	1	rimO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+rirA-waaQGPSBOJYZU	3798239	3808238	reverse	11	rirA,waaQ,waaG,waaP,waaS,waaB,waaO,waaJ,waaY,waaZ,waaU	[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	
+rlhA	1506781	1508742	forward	1	rlhA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rlmA	1906251	1907060	reverse	1	rlmA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rlmD	2913699	2915000	reverse	1	rlmD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rlmE-ftsH	3325001	3327664	reverse	2	rlmE,ftsH	[LTED|S|Length of transcript experimentally determined]	Strong
@@ -1340,35 +1357,38 @@ rlmM	2940143	2941243	reverse	1	rlmM	[IHBCE|W|Inferred by a human based on comput
 rlmN	2643129	2644283	reverse	1	rlmN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rluB	1326852	1327727	forward	1	rluB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rluC	1144940	1145899	forward	1	rluC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-rluD-yfiH	2734303	2736011	reverse	2	rluD,yfiH	[ICWHO|W|Inferred computationally without human oversight]	Weak
+rluD-pgeF	2734303	2736011	reverse	2	rluD,pgeF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rluE-nudJ	1193827	1194951	reverse	2	rluE,nudJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rluF	4230354	4231226	forward	1	rluF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-rmf	1015715	1015882	forward	1	rmf	[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+rmf	1015715	1015882	forward	1	rmf	[ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rmuC	4017333	4018760	forward	1	rmuC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rna	644197	645003	reverse	1	rna	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rnb	1346978	1348912	reverse	1	rnb	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
-rnc-era-recO-pdxJ-acpS	2700618	2704063	reverse	5	rnc,era,recO,pdxJ,acpS	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+rnc-era-recO-pdxJ-acpS	2700618	2704063	reverse	5	rnc,era,recO,pdxJ,acpS	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 rnd	1886864	1887991	reverse	1	rnd	[IHBCE|W|Inferred by a human based on computational evidence],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rne	1141182	1144367	reverse	1	rne	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rnhA	235535	236002	reverse	1	rnhA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rnk	643557	643967	reverse	1	rnk	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rnlAB	2765918	2767355	forward	2	rnlA,rnlB	[BTEI|W|Boundaries of transcription experimentally identified]; [IEP|W|Inferred from expression pattern]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
-rnt-lhr	1728347	1733703	forward	2	rnt,lhr	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+rnt-lhr	1728347	1733703	forward	2	rnt,lhr	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Strong
 rob	4634441	4635310	reverse	1	rob	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rodZ	2641831	2642844	reverse	1	rodZ	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 roxA	1187119	1188240	reverse	1	roxA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rph-pyrE	3815127	3816549	reverse	2	rph,pyrE	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 rpiA	3058666	3059325	reverse	1	rpiA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rpiB	4313350	4313799	forward	1	rpiB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-rpiR-alsBACE	4307783	4312991	reverse	5	rpiR,alsB,alsA,alsC,alsE	[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 rplKAJL-rpoBC	4178447	4189573	forward	6	rplK,rplA,rplJ,rplL,rpoB,rpoC	[PM|S|Polar mutation]; [BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Strong
 rplM-rpsI	3377815	3378651	reverse	2	rplM,rpsI	[BTEI|W|Boundaries of transcription experimentally identified]; [IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rplNXE-rpsNH-rplFR-rpsE-rpmD-rplO-secY-rpmJ	3442618	3448149	reverse	12	rplN,rplX,rplE,rpsN,rpsH,rplF,rplR,rpsE,rpmD,rplO,secY,rpmJ	[PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
-rplU-rpmA	3332862	3333451	reverse	2	rplU,rpmA		
+rplU-rpmA-yhbE-obgE	3330582	3333451	reverse	4	rplU,rpmA,yhbE,obgE	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	
 rplY	2282517	2282801	forward	1	rplY	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rpmE	4127013	4127225	forward	1	rpmE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rpmH-rnpA	3884336	3884852	forward	2	rpmH,rnpA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-rpoE-rseABC	2707322	2710012	reverse	4	rpoE,rseA,rseB,rseC	[ITCR|W|Inferred through co-regulation]; [BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
+rpnA	3543167	3544045	forward	1	rpnA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+rpnB	2422649	2423539	reverse	1	rpnB	[ICWHO|W|Inferred computationally without human oversight]	Weak
+rpnC	146968	147870	forward	1	rpnC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+rpnD-yjiQ	4568998	4569918	forward	2	rpnD,yjiQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
+rpnE-ypaA	2356904	2358001	forward	2	rpnE,ypaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rpoH	3599929	3600783	reverse	1	rpoH	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rpoZ-spoT-trmH-recG	3822106	3827291	forward	4	rpoZ,spoT,trmH,recG	[ITCR|W|Inferred through co-regulation]	
 rppH-ptsP	2966188	2968977	reverse	2	rppH,ptsP	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1389,6 +1409,7 @@ rrsE-gltV-rrlE-rrfE	4208147	4213159	forward	4	rrsE,gltV,rrlE,rrfE	[PAGTSBP|W|Pro
 rrsG-gltW-rrlG-rrfG	2726069	2731157	reverse	4	rrsG,gltW,rrlG,rrfG	[BTEI|W|Boundaries of transcription experimentally identified]	
 rrsH-ileV-alaV-rrlH-rrfH	223771	228875	forward	5	rrsH,ileV,alaV,rrlH,rrfH	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 rsd	4196332	4196808	reverse	1	rsd	[ICWHO|W|Inferred computationally without human oversight]	Weak
+rseD-rpoE-rseABC	2707322	2710164	reverse	5	rseD,rpoE,rseA,rseB,rseC	[ITCR|W|Inferred through co-regulation]; [ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]; [ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
 rseP	196546	197898	forward	1	rseP		
 rseX	2033649	2033739	forward	1	rseX	[IHBCE|W|Inferred by a human based on computational evidence],[LTED|S|Length of transcript experimentally determined]	Strong
 rsfS-rlmH-mrdAB-rlpA	664102	669036	reverse	5	rsfS,rlmH,mrdA,mrdB,rlpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1400,8 +1421,8 @@ rsmE-gshB	3091134	3092828	forward	2	rsmE,gshB	[ICWHO|W|Inferred computationally 
 rsmF	1920223	1921662	forward	1	rsmF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rsmI	3292475	3293335	reverse	1	rsmI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 rspAB	1652896	1655141	reverse	2	rspA,rspB	[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]	Strong
-rssAB	1289206	1291255	forward	2	rssA,rssB	[BTEI|W|Boundaries of transcription experimentally identified]; [PM|S|Polar mutation]	Strong
-rstAB	1682150	1684183	forward	2	rstA,rstB		
+rssAB	1289245	1291255	forward	2	rssA,rssB	[BTEI|W|Boundaries of transcription experimentally identified]; [PM|S|Polar mutation]	Strong
+rstAB	1682159	1684183	forward	2	rstA,rstB		
 rsuA	2279788	2280483	reverse	1	rsuA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 rtcBA	3555833	3558079	reverse	2	rtcB,rtcA	[PM|S|Polar mutation]	Strong
 rtcR	3558268	3559866	forward	1	rtcR	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
@@ -1435,29 +1456,30 @@ scpA-argK-scpBC	3060850	3066280	forward	4	scpA,argK,scpB,scpC	[NTAS|W|Non-tracea
 sdaA	1896932	1898296	forward	1	sdaA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 sdaCB	2928229	2930943	forward	2	sdaC,sdaB	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
 sdhCDAB-sucABCD	755177	765049	forward	8	sdhC,sdhD,sdhA,sdhB,sucA,sucB,sucC,sucD	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]	Strong
-sdhE-cptA	3040416	3041070	reverse	2	sdhE,cptA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+sdhE-ygfX	3040416	3041070	reverse	2	sdhE,ygfX	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sdiA	1996110	1996832	reverse	1	sdiA	[BTEI|W|Boundaries of transcription experimentally identified]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+sdsN	1996921	1997057	forward	1	sdsN	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 sdsR	1923104	1923207	reverse	1	sdsR	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 secE-nusG	4177358	4178288	forward	2	secE,nusG	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-secG-leuU	3322072	3322505	reverse	2	secG,leuU	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
+secG-leuU	3322072	3322505	reverse	2	secG,leuU	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]; [IHBCE|W|Inferred by a human based on computational evidence]	Weak
 secMA-mutT	107705	111433	forward	3	secM,secA,mutT	[PM|S|Polar mutation]	Strong
 selAB	3758017	3761249	reverse	2	selA,selB	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined]	Strong
 selC	3836222	3836316	forward	1	selC	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
+selU	530132	531226	reverse	1	selU	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 seqA-pgm	712987	715198	forward	2	seqA,pgm	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 serA	3057178	3058410	reverse	1	serA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 serB-radA-nadR	4624895	4628547	forward	3	serB,radA,nadR	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation],[PM|S|Polar mutation]	Weak
-serC-aroA	957653	960095	forward	2	serC,aroA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
+serC-aroA	957653	960095	forward	2	serC,aroA	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 serS	939428	940720	forward	1	serS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 serT	1031625	1031712	reverse	1	serT	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 serU	2043468	2043557	reverse	1	serU	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 serV-argVYZQ	2817784	2818645	reverse	5	serV,argV,argY,argZ,argQ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-serW	925884	925971	reverse	1	serW	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 serX	1097565	1097652	reverse	1	serX	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 setB	2263863	2265044	forward	1	setB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 setC	3836953	3838137	forward	1	setC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sfmA	558212	558754	forward	1	sfmA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sfmCD	558974	562300	forward	2	sfmC,sfmD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-sfmHF	562342	563845	forward	2	sfmH,sfmF	[ICWHO|W|Inferred computationally without human oversight]	Weak
+sfmHF	562336	563845	forward	2	sfmH,sfmF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sfsA-dksA-gluQ	159186	161486	reverse	3	sfsA,dksA,gluQ	[LTED|S|Length of transcript experimentally determined]	Strong
 sfsB	3334909	3335187	forward	1	sfsB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sgcXBCQAER	4526106	4531651	reverse	7	sgcX,sgcB,sgcC,sgcQ,sgcA,sgcE,sgcR	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1500,16 +1522,17 @@ sppA	1848837	1850693	forward	1	sppA	[ICWHO|W|Inferred computationally without hu
 spy	1825140	1825625	reverse	1	spy	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 sraA	458728	458784	reverse	1	sraA	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 sraB	1146589	1146757	forward	1	sraB	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
+sraG	3311183	3311398	forward	1	sraG	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
+srkA-dsbA	4042415	4044044	forward	2	srkA,dsbA	[BTEI|W|Boundaries of transcription experimentally identified]; [BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 srlAEBD-gutM-srlR-gutQ	2825832	2830778	forward	7	srlA,srlE,srlB,srlD,gutM,srlR,gutQ	[LTED|S|Length of transcript experimentally determined]	
 srmB	2712896	2714230	forward	1	srmB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 sroG-ribB	3183813	3184718	reverse	2	sroG,ribB	[LTED|S|Length of transcript experimentally determined]	Strong
 sroH	4190327	4190487	reverse	1	sroH	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 ssb	4274125	4274661	forward	1	ssb	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-sseA	2652494	2653339	forward	1	sseA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 sseB	2654157	2654933	reverse	1	sseB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 sspAB	3376279	3377420	reverse	2	sspA,sspB	[LTED|S|Length of transcript experimentally determined]	Strong
 ssrA	2755593	2755955	forward	1	ssrA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ssrS-fau	3055983	3056789	forward	2	ssrS,fau	[LTED|S|Length of transcript experimentally determined]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+ssrS-fau	3055983	3056789	forward	2	ssrS,fau	[LTED|S|Length of transcript experimentally determined]; [BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 sstT	3239944	3241188	forward	1	sstT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ssuEADCB	993277	997512	reverse	5	ssuE,ssuA,ssuD,ssuC,ssuB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 stfE-tfaE	1208517	1209655	reverse	2	stfE,tfaE	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1526,17 +1549,17 @@ symE	4579499	4579840	reverse	1	symE	[LTED|S|Length of transcript experimentally 
 symR	4579835	4579911	forward	1	symR	[LTED|S|Length of transcript experimentally determined],[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Strong
 tabA	4474862	4475314	forward	1	tabA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 tag-yiaC	3713092	3714092	forward	2	tag,yiaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-talA-tktB	2578666	2581639	forward	2	talA,tktB	[PAGTSBP|W|Products of adjacent genes in the same biological process],[IEP|W|Inferred from expression pattern]; [IC|W|Inferred by curator]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
+talA-tktB	2578666	2581639	forward	2	talA,tktB	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation]; [IC|W|Inferred by curator]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 talB	8238	9191	forward	1	talB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 tamAB-ytfP	4442382	4448235	forward	3	tamA,tamB,ytfP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 tar-tap-cheRBYZ	1966393	1972691	reverse	6	tar,tap,cheR,cheB,cheY,cheZ	[PM|S|Polar mutation]	Strong
 tas	2971597	2972637	forward	1	tas	[ICWHO|W|Inferred computationally without human oversight]	Weak
-tatABCD	4021945	4024336	forward	4	tatA,tatB,tatC,tatD	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Weak
+tatABCD	4021945	4024336	forward	4	tatA,tatB,tatC,tatD	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
 tatE	658947	659150	forward	1	tatE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 tauABCD	385232	388646	forward	4	tauA,tauB,tauC,tauD	[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 tcdA	2945036	2945842	reverse	1	tcdA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 tcyP	1810934	1812325	forward	1	tcyP	[LTED|S|Length of transcript experimentally determined]	Strong
-tdcABCDEFG	3258285	3267065	reverse	7	tdcA,tdcB,tdcC,tdcD,tdcE,tdcF,tdcG	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
+tdcABCDEFG	3258285	3267065	reverse	7	tdcA,tdcB,tdcC,tdcD,tdcE,tdcF,tdcG	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	Weak
 tdcR	3267380	3267598	forward	1	tdcR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 tdk	1293527	1294144	forward	1	tdk	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 tehAB	1500573	1502155	forward	2	tehA,tehB	[TASES|W|Traceable author statement to experimental support]	Weak
@@ -1579,7 +1602,7 @@ tpke70	2496194	2496629	reverse	1	tpke70	[ICWHO|W|Inferred computationally withou
 tpx	1388305	1388811	reverse	1	tpx	[LTED|S|Length of transcript experimentally determined]	Strong
 tqsA	1673913	1674947	forward	1	tqsA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 treA	1245679	1247376	reverse	1	treA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-treBC	4463054	4466180	reverse	2	treB,treC	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[IEP|W|Inferred from expression pattern],[PM|S|Polar mutation]	Confirmed
+treBC	4463054	4466180	reverse	2	treB,treC	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation],[IEP|W|Inferred from expression pattern]	Strong
 treF	3669592	3671241	forward	1	treF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[IEP|W|Inferred from expression pattern]	Weak
 treR	4466299	4467246	reverse	1	treR	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 trg	1492470	1494110	forward	1	trg	[IC|W|Inferred by curator]	Weak
@@ -1617,6 +1640,7 @@ ubiD	4024988	4026481	forward	1	ubiD	[ICWHO|W|Inferred computationally without hu
 ubiEJB	4018855	4021866	forward	3	ubiE,ubiJ,ubiB	[PM|S|Polar mutation]; [IC|W|Inferred by curator],[PM|S|Polar mutation]	Strong
 ubiF	695101	696276	forward	1	ubiF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ubiG	2339567	2340289	forward	1	ubiG		
+ubiK	3184840	3185130	forward	1	ubiK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ucpA	2543832	2544623	reverse	1	ucpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 udk-dcd	2141634	2142948	reverse	2	udk,dcd		
 udp	4016431	4017192	forward	1	udp		
@@ -1653,7 +1677,6 @@ valZ-lysY	781068	781222	forward	2	valZ,lysY	[ICWHO|W|Inferred computationally wi
 ves	1824362	1824937	reverse	1	ves		
 waaA-coaD	3808540	3810304	forward	2	waaA,coaD		
 waaH	3789047	3790081	reverse	1	waaH	[ICWHO|W|Inferred computationally without human oversight]	Weak
-waaQGPSBOJYZU	3798239	3808098	reverse	10	waaQ,waaG,waaP,waaS,waaB,waaO,waaJ,waaY,waaZ,waaU	[LTED|S|Length of transcript experimentally determined]; [PAGTSBP|W|Products of adjacent genes in the same biological process]	
 wbbIJK	2103391	2106057	reverse	3	wbbI,wbbJ,wbbK	[PAGTSBP|W|Products of adjacent genes in the same biological process],[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 wbbL_2	2101396	2101677	reverse	1	wbbL_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 wcaCDEF-gmd-fcl-gmm-wcaI-cpsBG-wcaJ-wzxC	2118680	2132070	reverse	12	wcaC,wcaD,wcaE,wcaF,gmd,fcl,gmm,wcaI,cpsB,cpsG,wcaJ,wzxC	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1674,6 +1697,7 @@ xthA	1832428	1833234	forward	1	xthA	[ICWHO|W|Inferred computationally without hu
 xylAB	3727917	3730765	reverse	2	xylA,xylB	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 xylE	4240779	4242254	reverse	1	xylE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 xylFGHR	3731131	3736157	forward	4	xylF,xylG,xylH,xylR	[ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
+xynR	288404	289162	reverse	1	xynR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaaA	5683	6459	reverse	1	yaaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaaI	11382	11786	reverse	1	yaaI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yaaJ	6529	7959	reverse	1	yaaJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1685,7 +1709,6 @@ yabPQ	58474	59279	forward	2	yabP,yabQ	[ICWHO|W|Inferred computationally without 
 yacC-speED	134788	136917	reverse	3	yacC,speE,speD	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 yacH	129407	131260	reverse	1	yacH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yacL	134388	134750	forward	1	yacL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yadD	146968	147870	forward	1	yadD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yadE	145081	146310	forward	1	yadE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yadGH	142779	144472	forward	2	yadG,yadH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yadI	144577	145017	forward	1	yadI	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1709,10 +1732,9 @@ yafT	237335	238120	forward	1	yafT	[ICWHO|W|Inferred computationally without huma
 yafU	238746	239084	reverse	1	yafU	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yafV	239419	240189	reverse	1	yafV	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yafY-ykfBF-yafX-ykfGH-yafW-ykfI	263328	266553	reverse	8	yafY,ykfB,ykfF,yafX,ykfG,ykfH,yafW,ykfI	[ICWHO|W|Inferred computationally without human oversight]	
-yagAB-ykgN	280024	281983	reverse	3	yagA,yagB,ykgN	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yagAB-insX	280024	281983	reverse	3	yagA,yagB,insX	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yagEF	282278	285168	forward	2	yagE,yagF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yagGH	285395	288399	forward	2	yagG,yagH	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yagI	288404	289162	reverse	1	yagI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yagJ	291500	292231	forward	1	yagJ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yagK	292322	292948	reverse	1	yagK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yagML	293220	294799	reverse	2	yagM,yagL	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1729,20 +1751,18 @@ yahL	344176	344991	forward	1	yahL	[ICWHO|W|Inferred computationally without huma
 yahM	345404	345649	forward	1	yahM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yahN	345666	346337	reverse	1	yahN	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yahO	346484	346759	forward	1	yahO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yaiE	408177	408461	forward	1	yaiE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yaiF	382504	382890	reverse	1	yaiF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiI	405764	406222	forward	1	yaiI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiL	376772	377311	forward	1	yaiL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiP	382739	383935	reverse	1	yaiP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiS	384059	384616	reverse	1	yaiS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiT	390251	391711	forward	1	yaiT	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yaiU	393015	394418	forward	1	yaiU	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yaiV	394461	395129	forward	1	yaiV	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yaiXO	380069	381059	reverse	2	yaiX,yaiO	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yaiX_1	382504	382872	reverse	1	yaiX_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yaiX_2O	380069	381059	reverse	2	yaiX_2,yaiO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yaiY	399025	399333	reverse	1	yaiY	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]; [IC|W|Inferred by curator]	Weak
 yaiZ	399593	399805	forward	1	yaiZ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yajD	430605	430952	forward	1	yajD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yajG-ampG	452070	454167	reverse	2	yajG,ampG	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Weak
+yajG-ampG	452070	454167	reverse	2	yajG,ampG	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Weak
 yajI	432312	432851	reverse	1	yajI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yajQ	444683	445174	forward	1	yajQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yajR	445302	446666	reverse	1	yajR	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1752,14 +1772,11 @@ ybaE	465612	467312	reverse	1	ybaE	[ICWHO|W|Inferred computationally without huma
 ybaK	506603	507082	reverse	1	ybaK	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybaL	501562	503238	reverse	1	ybaL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybaN	490882	491259	forward	1	ybaN	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybaO	468383	468841	forward	1	ybaO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybaP	507286	508080	reverse	1	ybaP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybaQ	508218	508559	forward	1	ybaQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ybaST	511641	513868	forward	2	ybaS,ybaT	[IHBCE|W|Inferred by a human based on computational evidence],[IEP|W|Inferred from expression pattern]	Weak
 ybaV	463937	464308	forward	1	ybaV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybaY	475379	475951	forward	1	ybaY	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybbAP	519733	522830	forward	2	ybbA,ybbP	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybbB	530132	531226	reverse	1	ybbB	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 ybbN	517425	518279	reverse	1	ybbN		
 ybcC	566098	566361	reverse	1	ybcC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybcD	566451	566687	forward	1	ybcD	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1775,7 +1792,6 @@ ybcY	582152	582736	reverse	1	ybcY	[AISGDTU|W|Automated inference that a single-g
 ybdD	632182	632379	forward	1	ybdD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybdF	605518	605886	reverse	1	ybdF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybdG	603416	604663	reverse	1	ybdG	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybdH	632389	633477	reverse	1	ybdH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybdJ	605951	606199	reverse	1	ybdJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybdK	606265	607383	reverse	1	ybdK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybdL	633586	634746	forward	1	ybdL	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -1791,7 +1807,7 @@ ybeQ	675570	676547	reverse	1	ybeQ	[AISGDTU|W|Automated inference that a single-g
 ybeR-djlB	676711	678842	forward	2	ybeR,djlB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybeT	678852	679406	reverse	1	ybeT	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybeU-djlC	679508	681663	forward	2	ybeU,djlC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybeZYX-lnt	689343	693417	reverse	4	ybeZ,ybeY,ybeX,lnt	[ITCR|W|Inferred through co-regulation]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+ybeZYX-lnt	689343	693378	reverse	4	ybeZ,ybeY,ybeX,lnt	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]	Weak
 ybfA	729134	729340	forward	1	ybfA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybfD	738092	738853	forward	1	ybfD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybfE	711605	711898	reverse	1	ybfE	[LTED|S|Length of transcript experimentally determined]	Strong
@@ -1804,13 +1820,13 @@ ybfQ	736445	736699	forward	1	ybfQ	[ICWHO|W|Inferred computationally without huma
 ybgA-phr	739001	740925	forward	2	ybgA,phr	[LTED|S|Length of transcript experimentally determined]	
 ybgC-tolQRA	774752	777607	forward	4	ybgC,tolQ,tolR,tolA	[PM|S|Polar mutation]	Strong
 ybgD	752229	752795	reverse	1	ybgD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybgIJKL-nei	742827	746726	forward	5	ybgI,ybgJ,ybgK,ybgL,nei	[LTED|S|Length of transcript experimentally determined]	Strong
+ybgI-pxpBCA-nei	742827	746726	forward	5	ybgI,pxpB,pxpC,pxpA,nei	[LTED|S|Length of transcript experimentally determined]	Strong
 ybgQPO	747921	752169	reverse	3	ybgQ,ybgP,ybgO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybgS	784937	785317	reverse	1	ybgS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybhA	797613	798431	reverse	1	ybhA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybhB	807433	807909	reverse	1	ybhB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybhC	805998	807281	reverse	1	ybhC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybhD	799622	800638	reverse	1	ybhD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+ybhD	799622	800575	reverse	1	ybhD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybhH	800759	801811	forward	1	ybhH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybhI	801887	803320	forward	1	ybhI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybhJ	803503	805764	forward	1	ybhJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1820,9 +1836,6 @@ ybhM	820793	821506	forward	1	ybhM	[ICWHO|W|Inferred computationally without huma
 ybhP-clsB-ybhN	821542	824497	reverse	3	ybhP,clsB,ybhN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybhQ	824630	825040	forward	1	ybhQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybiA	832468	832950	reverse	1	ybiA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ybiB	835248	836210	forward	1	ybiB	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
-ybiC	836351	837436	forward	1	ybiC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybiH-ybhGFSR	825002	830643	reverse	5	ybiH,ybhG,ybhF,ybhS,ybhR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybiI	838190	838456	reverse	1	ybiI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybiJ	837665	837925	reverse	1	ybiJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybiO	843255	845480	reverse	1	ybiO	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1830,7 +1843,7 @@ ybiT	855963	857555	forward	1	ybiT	[AISGDTU|W|Automated inference that a single-g
 ybiU	857796	859061	reverse	1	ybiU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybiV	859213	860028	reverse	1	ybiV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybiX	838530	839207	reverse	1	ybiX	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybiYW	860174	863538	reverse	2	ybiY,ybiW	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ybiYW	860174	863511	reverse	2	ybiY,ybiW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybjC-nfsA-rimK-ybjN	890913	893433	forward	4	ybjC,nfsA,rimK,ybjN	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[IEP|W|Inferred from expression pattern]	Strong
 ybjD	916473	918131	forward	1	ybjD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ybjG	882792	883388	reverse	1	ybjG		
@@ -1842,7 +1855,7 @@ ybjO-rlmC	897989	899645	forward	2	ybjO,rlmC	[ICWHO|W|Inferred computationally wi
 ybjP	903952	904467	reverse	1	ybjP		
 ybjQ-amiD	904593	905743	forward	2	ybjQ,amiD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ybjS	905740	906753	reverse	1	ybjS	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ybjX	918128	919084	reverse	1	ybjX	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+ybjX	918128	919120	reverse	1	ybjX	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ycaC	944931	945557	reverse	1	ycaC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ycaD	945871	947019	forward	1	ycaD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycaI-msbA-lpxK-ycaQ	964320	970621	forward	4	ycaI,msbA,lpxK,ycaQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1878,24 +1891,22 @@ yceQ	1144502	1144822	forward	1	yceQ	[ICWHO|W|Inferred computationally without hu
 ycfJ	1167599	1168138	forward	1	ycfJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycfT	1174092	1175165	reverse	1	ycfT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgB	1235709	1237241	reverse	1	ycgB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ycgH_1	1220801	1221121	forward	1	ycgH_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ycgH_2	1221206	1222222	forward	1	ycgH_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ycgH_1H_2	1219601	1222222	forward	2	ycgH_1,ycgH_2	[IC|W|Inferred by curator],[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgJ	1226600	1226968	forward	1	ycgJ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ycgL	1227681	1228007	forward	1	ycgL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgM	1228079	1228738	forward	1	ycgM	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ycgN	1228830	1229276	forward	1	ycgN	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ycgN	1228815	1229276	forward	1	ycgN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgR	1243793	1244527	reverse	1	ycgR		
 ycgV	1253085	1255952	reverse	1	ycgV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgX	1212703	1213107	reverse	1	ycgX	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgY	1245160	1245600	forward	1	ycgY	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycgZ-ymgA-ariR-ymgC	1215789	1216996	forward	4	ycgZ,ymgA,ariR,ymgC	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 ychE	1298598	1299245	forward	1	ychE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ychE_2-yhcF	3366681	3367642	forward	2	ychE_2,yhcF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ychG_1G_2	1294426	1295198	reverse	2	ychG_1,ychG_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ychH	1258791	1259069	forward	1	ychH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ychJ	1288674	1289132	reverse	1	ychJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ychN	1273246	1273599	reverse	1	ychN	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ychO	1273925	1275178	forward	1	ychO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+ychO	1273784	1275178	forward	1	ychO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ychQA-kdsA	1266924	1269019	forward	3	ychQ,ychA,kdsA	[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ychS	1286709	1286984	forward	1	ychS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yciA	1311848	1312246	reverse	1	yciA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1913,13 +1924,11 @@ ycjG	1388930	1389895	forward	1	ycjG	[AISGDTU|W|Automated inference that a single
 ycjMNOPQRSTUV-ymjB	1370216	1381902	forward	11	ycjM,ycjN,ycjO,ycjP,ycjQ,ycjR,ycjS,ycjT,ycjU,ycjV,ymjB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ycjW	1382963	1383961	reverse	1	ycjW	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ycjXF-tyrR	1384117	1388261	forward	3	ycjX,ycjF,tyrR	[ITCR|W|Inferred through co-regulation]; [ICWHO|W|Inferred computationally without human oversight]; [BTEI|W|Boundaries of transcription experimentally identified]	Weak
-ycjY-ymjDC-mpaA	1389870	1391865	reverse	4	ycjY,ymjD,ymjC,mpaA	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [LTED|S|Length of transcript experimentally determined],[IC|W|Inferred by curator]; [ICWHO|W|Inferred computationally without human oversight]	Weak
+ycjY-ymjDC-mpaA	1389870	1391853	reverse	4	ycjY,ymjD,ymjC,mpaA	[PAGTSBP|W|Products of adjacent genes in the same biological process]; [ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[IC|W|Inferred by curator]	Weak
 ydaGF	1419156	1419456	reverse	2	ydaG,ydaF	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ydaN	1408050	1409033	forward	1	ydaN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydaSTUVW-rzpR	1420365	1423644	forward	6	ydaS,ydaT,ydaU,ydaV,ydaW,rzpR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydbA_1	1465392	1467950	forward	1	ydbA_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydbA_2	1470690	1474013	forward	1	ydbA_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ydbC	1474221	1475081	forward	1	ydbC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydbD	1475144	1477450	forward	1	ydbD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydbH-ynbE-ydbL	1443051	1446206	forward	3	ydbH,ynbE,ydbL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydbJ	1441058	1441324	forward	1	ydbJ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -1932,9 +1941,7 @@ ydcI	1494148	1495071	reverse	1	ydcI	[AISGDTU|W|Automated inference that a single
 ydcJ	1495288	1496631	forward	1	ydcJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydcK	1499469	1500449	reverse	1	ydcK	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ydcL	1502457	1503125	forward	1	ydcL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ydcM	1503657	1504865	forward	1	ydcM	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ydcO	1504905	1506080	reverse	1	ydcO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-ydcP	1506781	1508742	forward	1	ydcP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydcR	1510003	1511409	forward	1	ydcR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydcSTUV-patD	1511654	1517002	forward	5	ydcS,ydcT,ydcU,ydcV,patD	[ITCR|W|Inferred through co-regulation]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 ydcY	1517648	1517881	forward	1	ydcY	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -1943,7 +1950,7 @@ yddE	1534965	1535858	reverse	1	yddE	[ICWHO|W|Inferred computationally without hu
 yddG	1546288	1547169	reverse	1	yddG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yddH	1533282	1533851	reverse	1	yddH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yddLKJ	1544384	1546028	reverse	3	yddL,yddK,yddJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yddM	1552398	1552760	reverse	1	yddM	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yddM	1552398	1552682	reverse	1	yddM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yddW	1567504	1568823	reverse	1	yddW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydeA	1617028	1618218	forward	1	ydeA		
 ydeE	1621332	1622519	forward	1	ydeE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -1981,7 +1988,6 @@ ydhQ	1744871	1746127	reverse	1	ydhQ	[AISGDTU|W|Automated inference that a single
 ydhR	1746700	1747005	forward	1	ydhR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydhS	1747131	1748735	forward	1	ydhS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydhYVWXUT	1748747	1754477	reverse	6	ydhY,ydhV,ydhW,ydhX,ydhU,ydhT	[ICWHO|W|Inferred computationally without human oversight]; [PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined]	Strong
-ydhZ	1754932	1755141	reverse	1	ydhZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydiE	1789613	1789804	forward	1	ydiE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydiFO	1775587	1778347	forward	2	ydiF,ydiO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydiJ-menI-ydiH	1764934	1768685	reverse	3	ydiJ,menI,ydiH	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2000,7 +2006,7 @@ ydjE	1852621	1853979	reverse	1	ydjE	[ICWHO|W|Inferred computationally without hu
 ydjF	1854096	1854854	reverse	1	ydjF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydjLKJIHG	1854991	1861332	reverse	6	ydjL,ydjK,ydjJ,ydjI,ydjH,ydjG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydjM	1810211	1810801	forward	1	ydjM	[LTED|S|Length of transcript experimentally determined]	Strong
-ydjO	1812329	1813144	reverse	1	ydjO	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ydjO	1812329	1813132	reverse	1	ydjO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ydjXYZ-ynjABCD	1833401	1839400	forward	7	ydjX,ydjY,ydjZ,ynjA,ynjB,ynjC,ynjD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeaC	1861702	1861974	reverse	1	yeaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeaE	1864782	1865636	reverse	1	yeaE	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2019,7 +2025,7 @@ yebG	1930457	1930747	reverse	1	yebG	[ICWHO|W|Inferred computationally without hu
 yebK	1936652	1937521	forward	1	yebK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yebO	1908261	1908548	reverse	1	yebO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yebQ	1910276	1911649	forward	1	yebQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yebST	1916258	1920143	forward	2	yebS,yebT	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yebST	1916258	1920143	forward	2	yebS,yebT	[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]	Strong
 yebV	1921780	1922016	forward	1	yebV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yebW	1922121	1922312	forward	1	yebW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yecA	1990954	1991619	reverse	1	yecA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2037,17 +2043,14 @@ yedEF	2008277	2009712	forward	2	yedE,yedF	[ICWHO|W|Inferred computationally with
 yedI	2028449	2029366	reverse	1	yedI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yedK	2009821	2010489	forward	1	yedK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yedL	2010600	2011079	forward	1	yedL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yedM	2012001	2012351	reverse	1	yedM	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yedN_1N_2	2011348	2011869	reverse	2	yedN_1,yedN_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yedMN_2N_3	2011348	2012351	reverse	3	yedM,yedN_2,yedN_3	[IC|W|Inferred by curator],[ICWHO|W|Inferred computationally without human oversight]	Weak
 yedP	2025511	2026326	forward	1	yedP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yedRJ	2032384	2033484	reverse	2	yedR,yedJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yedS_1S_2	2034051	2034755	forward	2	yedS_1,yedS_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yedS_3	2034839	2035243	forward	1	yedS_3	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yedWV	2036794	2038823	reverse	2	yedW,yedV	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yedS_1S_2S_3	2034051	2035243	forward	3	yedS_1,yedS_2,yedS_3	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yedX	2038956	2039369	forward	1	yedX	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeeA	2079533	2080591	reverse	1	yeeA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeeED	2084226	2085525	reverse	2	yeeE,yeeD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yeeJ	2044911	2052014	forward	1	yeeJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yeeJ	2044938	2052014	forward	1	yeeJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeeL_1L_2	2052276	2053328	reverse	2	yeeL_1,yeeL_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeeN	2056858	2057574	forward	1	yeeN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeeO	2058203	2059846	reverse	1	yeeO	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2075,7 +2078,6 @@ yehK	2203972	2204289	forward	1	yehK	[ICWHO|W|Inferred computationally without hu
 yehLMPQ	2204596	2210944	forward	4	yehL,yehM,yehP,yehQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yehR	2211225	2211686	forward	1	yehR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yehS	2211726	2212196	reverse	1	yehS	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-yehUT	2212243	2214644	reverse	2	yehU,yehT	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeiE	2248737	2249618	reverse	1	yeiE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yeiG	2243910	2244746	forward	1	yeiG	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yeiH	2249717	2250766	forward	1	yeiH	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2091,36 +2093,34 @@ yejK	2282940	2283947	reverse	1	yejK	[AISGDTU|W|Automated inference that a single
 yejLM	2284129	2286136	forward	2	yejL,yejM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yejO	2286390	2288900	reverse	1	yejO		
 yfaATS_1S_2QP	2327367	2336644	reverse	6	yfaA,yfaT,yfaS_1,yfaS_2,yfaQ,yfaP	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfaD-ypaA	2356904	2358001	forward	2	yfaD,ypaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfaH	2349687	2349893	forward	1	yfaH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yfaL	2340417	2344169	reverse	1	yfaL	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yfaXWVU	2358042	2362211	reverse	4	yfaX,yfaW,yfaV,yfaU	[ICWHO|W|Inferred computationally without human oversight]; [AH|W|Author hypothesis]	Weak
+yfaX-rhmD-yfaVU	2358042	2362211	reverse	4	yfaX,rhmD,yfaV,yfaU	[ICWHO|W|Inferred computationally without human oversight]; [AH|W|Author hypothesis]	Weak
 yfaY	2362431	2363633	reverse	1	yfaY	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfaZ	2363733	2364275	reverse	1	yfaZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbK	2383995	2385722	reverse	1	yfbK	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yfbL	2385860	2386831	forward	1	yfbL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbM	2386934	2387437	forward	1	yfbM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbN	2387710	2388426	reverse	1	yfbN	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yfbO	2388581	2389057	forward	1	yfbO	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfbO	2388635	2389057	forward	1	yfbO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbP	2389116	2389964	forward	1	yfbP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbS	2409520	2411352	reverse	1	yfbS	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfbUT	2411439	2412594	reverse	2	yfbU,yfbT	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfbU-hxpA	2411439	2412594	reverse	2	yfbU,hxpA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfbV	2412677	2413132	reverse	1	yfbV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcC	2417081	2418601	forward	1	yfcC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcD	2418634	2419176	reverse	1	yfcD	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 yfcE	2419234	2419788	reverse	1	yfcE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcF	2419841	2420485	reverse	1	yfcF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcG	2420621	2421268	forward	1	yfcG	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfcI	2422649	2423539	reverse	1	yfcI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcJ	2438942	2440120	reverse	1	yfcJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfcUTSRQPO	2449228	2455001	reverse	7	yfcU,yfcT,yfcS,yfcR,yfcQ,yfcP,yfcO	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfcU_1U_2SRQPO	2449228	2455001	reverse	7	yfcU_1,yfcU_2,yfcS,yfcR,yfcQ,yfcP,yfcO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcV	2455083	2455646	reverse	1	yfcV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfcZ	2460650	2460934	reverse	1	yfcZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdC	2465301	2466233	forward	1	yfdC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdF	2463012	2464070	forward	1	yfdF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdGHI	2467855	2470462	forward	3	yfdG,yfdH,yfdI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdONMLK	2471077	2473246	reverse	5	yfdO,yfdN,yfdM,yfdL,yfdK	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfdPQ	2473520	2474856	forward	2	yfdP,yfdQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfdPQ	2473604	2474856	forward	2	yfdP,yfdQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdRST	2474984	2476178	forward	3	yfdR,yfdS,yfdT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfdX-frc-oxc-yfdVE	2488023	2494402	reverse	5	yfdX,frc,oxc,yfdV,yfdE	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]	Weak
 yfdY	2495050	2495292	reverse	1	yfdY	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2135,23 +2135,22 @@ yffB-dapE-ypfN	2591247	2592962	forward	3	yffB,dapE,ypfN	[ICWHO|W|Inferred comput
 yffL	2560257	2560898	forward	1	yffL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yffMN	2561368	2561993	forward	2	yffM,yffN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yffOP	2562111	2563117	forward	2	yffO,yffP	[ITCR|W|Inferred through co-regulation]	Weak
-yffQR	2563577	2564372	forward	2	yffQ,yffR	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yffS	2564493	2565332	forward	1	yffS	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yffQR	2563592	2564372	forward	2	yffQ,yffR	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yffS	2564523	2565332	forward	1	yffS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfgG	2629290	2629481	forward	1	yfgG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfgHI	2629792	2630865	forward	2	yfgH,yfgI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfgJ	2635599	2635814	reverse	1	yfgJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfgM	2638663	2639283	reverse	1	yfgM	[IC|W|Inferred by curator]	Weak
 yfgO	2614820	2615881	reverse	1	yfgO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yfhG	2688793	2689506	reverse	1	yfhG	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 yfhH	2698759	2699607	forward	1	yfhH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfhL	2699663	2699923	forward	1	yfhL	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 yfhM-pbpC	2645013	2652287	reverse	2	yfhM,pbpC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfhR	2664363	2665244	forward	1	yfhR	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfhR	2664390	2665244	forward	1	yfhR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfiC	2712027	2712764	reverse	1	yfiC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yfiE	2714439	2715320	reverse	1	yfiE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yfiF	2717491	2718528	reverse	1	yfiF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yfiL	2741360	2741725	forward	1	yfiL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yfiM	2724179	2724451	forward	1	yfiM	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yfiM	2724128	2724451	forward	1	yfiM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yfiP-patZ	2719223	2722613	forward	2	yfiP,patZ	[LTED|S|Length of transcript experimentally determined]; [ICWHO|W|Inferred computationally without human oversight]	Weak
 yfiR-dgcN-yfiB	2741875	2744107	forward	3	yfiR,dgcN,yfiB	[ICWHO|W|Inferred computationally without human oversight]; [PM|S|Polar mutation]	Strong
 yfjD	2748774	2750060	forward	1	yfjD	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2166,13 +2165,12 @@ yfjXY-ypjJ-yfjZ-ypjF	2775919	2777782	forward	5	yfjX,yfjY,ypjJ,yfjZ,ypjF	[ICWHO|W
 ygaC	2799650	2799994	reverse	1	ygaC		
 ygaM	2800146	2800475	forward	1	ygaM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygaQ	2786397	2788649	forward	1	ygaQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ygaU	2796337	2796786	reverse	1	ygaU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygaVP	2797211	2798044	forward	2	ygaV,ygaP	[PAGTSBP|W|Products of adjacent genes in the same biological process],[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
-ygaXY	2808316	2809493	forward	2	ygaX,ygaY	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ygaY_1Y_2	2808316	2809493	forward	2	ygaY_1,ygaY_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygaZH	2809617	2810679	forward	2	ygaZ,ygaH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygbA	2856453	2856806	reverse	1	ygbA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 ygbE	2873014	2873337	reverse	1	ygbE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ygbI	2860467	2861264	reverse	1	ygbI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+ygbI	2860467	2861234	reverse	1	ygbI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ygbJK	2861430	2863501	forward	2	ygbJ,ygbK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygbLM	2863593	2865012	forward	2	ygbL,ygbM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygbN	2865101	2866465	forward	1	ygbN	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2183,8 +2181,7 @@ ygcS	2896533	2897870	reverse	1	ygcS	[ICWHO|W|Inferred computationally without hu
 ygcU	2897964	2899418	reverse	1	ygcU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygcW	2899488	2900273	reverse	1	ygcW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygdD	2941236	2941631	reverse	1	ygdD	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
-ygdG	2930965	2931810	forward	1	ygdG	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ygdH	2926308	2927672	forward	1	ygdH	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ygdG	2931055	2931810	forward	1	ygdG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygdI	2942918	2943145	reverse	1	ygdI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ygdQ	2970420	2971133	forward	1	ygdQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygdR	2971271	2971489	forward	1	ygdR	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2226,10 +2223,8 @@ yghT	3134131	3134823	forward	1	yghT	[AISGDTU|W|Automated inference that a single
 yghU	3138727	3139593	forward	1	yghU	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yghW	3146450	3146737	reverse	1	yghW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yghX_2X_1	3146856	3147619	reverse	2	yghX_2,yghX_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yghZ	3147897	3148937	forward	1	yghZ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ygiD	3181619	3182434	reverse	1	ygiD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ygiF-glnE	3196801	3200965	reverse	2	ygiF,glnE	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
-ygiH	3204694	3205311	forward	1	ygiH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ygiL	3185414	3185965	forward	1	ygiL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygiM-cca	3201207	3203129	forward	2	ygiM,cca	[ITCR|W|Inferred through co-regulation]	Weak
 ygiN	3173142	3173456	forward	1	ygiN	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2243,15 +2238,14 @@ ygjI	3226234	3227667	forward	1	ygjI	[ICWHO|W|Inferred computationally without hu
 ygjJK	3227801	3231239	forward	2	ygjJ,ygjK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygjP	3235960	3236463	forward	1	ygjP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygjQ	3236540	3237232	forward	1	ygjQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ygjR	3237293	3238297	forward	1	ygjR	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ygjR	3237311	3238297	forward	1	ygjR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ygjV	3241193	3241744	reverse	1	ygjV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhaBC	3267854	3269602	forward	2	yhaB,yhaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhaH	3252304	3252669	forward	1	yhaH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhaI	3252911	3253267	forward	1	yhaI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhaJ	3253318	3254214	reverse	1	yhaJ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhaKL	3254319	3255207	forward	2	yhaK,yhaL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yhaOM	3255341	3257947	reverse	2	yhaO,yhaM	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yhbE-obgE	3330582	3332735	reverse	2	yhbE,obgE	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yhaOM	3255341	3258010	reverse	2	yhaO,yhaM	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 yhbO	3298974	3299492	forward	1	yhbO	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhbP	3299472	3299915	reverse	1	yhbP	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhbQ	3299966	3300268	forward	1	yhbQ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2260,9 +2254,10 @@ yhbUV	3301485	3303367	forward	2	yhbU,yhbV	[ICWHO|W|Inferred computationally with
 yhbW	3303448	3304455	forward	1	yhbW	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhbX	3319988	3321613	reverse	1	yhbX	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhbY	3327790	3328083	forward	1	yhbY	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yhcAD-ychE_1	3362112	3365664	forward	3	yhcA,yhcD,ychE_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yhcADE_1	3362112	3365664	forward	3	yhcA,yhcD,yhcE_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhcB	3380191	3380589	forward	1	yhcB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhcC	3353121	3354050	reverse	1	yhcC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yhcE_2F	3366681	3367642	forward	2	yhcE_2,yhcF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhcG	3367827	3368954	forward	1	yhcG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhcN	3385538	3385801	forward	1	yhcN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhcO	3385857	3386129	reverse	1	yhcO	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2277,14 +2272,14 @@ yhdWXYZ	3419149	3423194	forward	4	yhdW,yhdX,yhdY,yhdZ
 yheO-tusDCB	3474678	3476440	reverse	4	yheO,tusD,tusC,tusB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yheSTU	3481289	3484436	forward	3	yheS,yheT,yheU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhfA	3485414	3485818	reverse	1	yhfA	[LTED|S|Length of transcript experimentally determined]	Strong
-yhfG-fic-pabA	3490266	3491620	reverse	3	yhfG,fic,pabA	[PM|S|Polar mutation]; [ICWHO|W|Inferred computationally without human oversight]	
+yhfG-fic-pabA	3490266	3491620	reverse	3	yhfG,fic,pabA	[ICWHO|W|Inferred computationally without human oversight],[PM|S|Polar mutation]	
 yhfK	3486791	3488893	forward	1	yhfK	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 yhfL	3499448	3499615	forward	1	yhfL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhfXW-php-yhfUTS	3504935	3510976	reverse	6	yhfX,yhfW,php,yhfU,yhfT,yhfS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhfZY	3511060	3512344	reverse	2	yhfZ,yhfY	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yhgA	3543167	3544045	forward	1	yhgA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhgE	3530715	3532439	reverse	1	yhgE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhgF	3537385	3539706	forward	1	yhgF	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yhgH-nfuA	3544882	3546199	forward	2	yhgH,nfuA	[BTEI|W|Boundaries of transcription experimentally identified]	
 yhgN	3575071	3575664	forward	1	yhgN	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhhA	3586943	3587383	forward	1	yhhA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhhH	3623399	3623782	forward	1	yhhH	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2305,12 +2300,11 @@ yhiL	3633220	3634458	reverse	1	yhiL	[ICWHO|W|Inferred computationally without hu
 yhiM	3634841	3635893	forward	1	yhiM	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhiN	3636208	3637410	reverse	1	yhiN	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yhiS_1	3651291	3652073	forward	1	yhiS_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yhjA	3667791	3669188	reverse	1	yhjA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhjB	3671292	3671894	reverse	1	yhjB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yhjC	3672342	3673313	forward	1	yhjC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yhjC	3672414	3673313	forward	1	yhjC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhjD	3673362	3674375	forward	1	yhjD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yhjE	3674786	3676108	forward	1	yhjE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yhjG	3676290	3678365	reverse	1	yhjG	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
+yhjG	3676290	3678350	reverse	1	yhjG	[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
 yhjJ	3680444	3681940	reverse	1	yhjJ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 yhjR	3695997	3696185	reverse	1	yhjR	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 yhjV	3700563	3701834	forward	1	yhjV	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2322,7 +2316,7 @@ yiaD	3716547	3717206	forward	1	yiaD	[ICWHO|W|Inferred computationally without hu
 yiaF	3718334	3719044	reverse	1	yiaF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yiaG	3719478	3719768	forward	1	yiaG		
 yiaJ	3741684	3742532	reverse	1	yiaJ	[LTED|S|Length of transcript experimentally determined]	Strong
-yiaKLMNO-lyxK-sgbHUE	3742733	3750781	forward	9	yiaK,yiaL,yiaM,yiaN,yiaO,lyxK,sgbH,sgbU,sgbE	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Confirmed
+yiaKLMNO-lyxK-sgbHUE	3742733	3750781	forward	9	yiaK,yiaL,yiaM,yiaN,yiaO,lyxK,sgbH,sgbU,sgbE	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified],[PM|S|Polar mutation]	Strong
 yiaT	3751128	3751868	reverse	1	yiaT	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yiaU	3751992	3752966	forward	1	yiaU	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yiaWV	3752963	3754428	reverse	2	yiaW,yiaV	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2354,26 +2348,24 @@ yidQ	3867728	3868060	forward	1	yidQ
 yidR	3868062	3869309	reverse	1	yidR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yidX	3875438	3876094	forward	1	yidX	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yidZ	3892765	3893724	forward	1	yidZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yieEF	3893869	3895218	forward	2	yieE,yieF	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
+yieEF	3893881	3895218	forward	2	yieE,yieF	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 yieH	3896774	3897439	forward	1	yieH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yieP-hsrA	3939185	3941327	reverse	2	yieP,hsrA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yifB	3948449	3949999	reverse	1	yifB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yifE	3948086	3948424	forward	1	yifE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+yifB	3948449	3949969	reverse	1	yifB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yifK	3980887	3982272	forward	1	yifK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yifL-dapF-yigA-xerC-yigB	3994522	3997899	forward	5	yifL,dapF,yigA,xerC,yigB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yifNO	3960012	3960460	reverse	2	yifN,yifO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yigE	4000292	4001056	reverse	1	yigE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yigGF	4002419	4003193	reverse	2	yigG,yigF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yigI	4004230	4004697	reverse	1	yigI	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yigM	4011076	4011975	forward	1	yigM	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yihA	4050133	4050729	reverse	1	yihA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+yihA	4050133	4050765	reverse	1	yihA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yihD	4042069	4042338	forward	1	yihD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihF	4044199	4045629	forward	1	yihF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihG	4045670	4046602	reverse	1	yihG		
 yihI	4051347	4051856	forward	1	yihI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihLM	4060447	4062145	forward	2	yihL,yihM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihN	4062247	4063512	forward	1	yihN	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yihPO	4064363	4067215	reverse	2	yihP,yihO	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yihPO	4064363	4067194	reverse	2	yihP,yihO	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihQ	4067240	4069276	reverse	1	yihQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihR	4069475	4070401	reverse	1	yihR	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yihUTS	4070515	4073571	reverse	3	yihU,yihT,yihS	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2397,7 +2389,7 @@ yjaH	4200566	4201261	forward	1	yjaH
 yjaZ	4189786	4190325	forward	1	yjaZ	[LTED|S|Length of transcript experimentally determined]	Strong
 yjbB	4227731	4229362	forward	1	yjbB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjbD	4231359	4231631	reverse	1	yjbD	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yjbEFGH	4235906	4239730	forward	4	yjbE,yjbF,yjbG,yjbH	[PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]; [ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+yjbEFGH	4235906	4239730	forward	4	yjbE,yjbF,yjbG,yjbH	[PAGTSBP|W|Products of adjacent genes in the same biological process],[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]; [ICWHO|W|Inferred computationally without human oversight]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 yjbI	4250955	4252283	forward	1	yjbI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjbJ	4259237	4259446	forward	1	yjbJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjbLM	4260321	4261306	forward	2	yjbL,yjbM	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2412,7 +2404,7 @@ yjdIJ	4351843	4352357	forward	2	yjdI,yjdJ	[ICWHO|W|Inferred computationally with
 yjdM	4326399	4326734	reverse	1	yjdM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjdN	4325298	4325741	reverse	1	yjdN	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjdP	4313868	4314197	forward	1	yjdP	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yjeF-tsaE-amiB-mutL-miaA-hfq-hflXKC	4394066	4404304	forward	9	yjeF,tsaE,amiB,mutL,miaA,hfq,hflX,hflK,hflC	[ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined]	Weak
+yjeF-tsaE-amiB-mutL-miaA-hfq-hflXKC	4394066	4404304	forward	9	yjeF,tsaE,amiB,mutL,miaA,hfq,hflX,hflK,hflC	[ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined]	
 yjeH	4369156	4370412	reverse	1	yjeH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yjeI	4372809	4373162	forward	1	yjeI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjeJ	4373365	4374234	reverse	1	yjeJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2448,14 +2440,12 @@ yjiHG-iadA	4558354	4560680	reverse	3	yjiH,yjiG,iadA	[ICWHO|W|Inferred computatio
 yjiJ	4561497	4562675	reverse	1	yjiJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiK	4562743	4563603	reverse	1	yjiK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiML	4563922	4565850	reverse	2	yjiM,yjiL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yjiPQ	4568998	4569918	forward	2	yjiP,yjiQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiR	4570162	4571574	reverse	1	yjiR	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yjiS	4571751	4571915	forward	1	yjiS	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiT	4572414	4573931	forward	1	yjiT	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiV	4574135	4576855	forward	1	yjiV	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjiXA	4587909	4589079	reverse	2	yjiX,yjiA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yjiY	4589129	4591279	reverse	1	yjiY	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yjjB-dnaTC-yjjA	4599695	4601950	reverse	4	yjjB,dnaT,dnaC,yjjA	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
+yjjB-dnaTC-yjjA	4599695	4602097	reverse	4	yjjB,dnaT,dnaC,yjjA	[ITCR|W|Inferred through co-regulation],[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 yjjI	4615515	4617065	reverse	1	yjjI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjjJ	4621769	4623100	forward	1	yjjJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yjjP	4602088	4602858	reverse	1	yjjP	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
@@ -2481,10 +2471,8 @@ ykiB	389897	390115	reverse	1	ykiB	[ICWHO|W|Inferred computationally without huma
 ylaC	478781	479251	reverse	1	ylaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ylbG	529645	530016	reverse	1	ylbG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yliI	878742	879857	forward	1	yliI	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ymbA	1014911	1015459	forward	1	ymbA	[IHBCE|W|Inferred by a human based on computational evidence]	Weak
 ymcE-gnsA	1051847	1052240	forward	2	ymcE,gnsA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ymdA	1105414	1105725	forward	1	ymdA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ymdB-clsC	1105820	1107776	forward	2	ymdB,clsC	[ICWHO|W|Inferred computationally without human oversight]; [IC|W|Inferred by curator]	Weak
+ymdAB-clsC	1105414	1107776	forward	3	ymdA,ymdB,clsC	[LTED|S|Length of transcript experimentally determined],[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]; [LTED|S|Length of transcript experimentally determined],[IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ymdE-ycdU	1095544	1096829	forward	2	ymdE,ycdU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymdF	1068081	1068254	forward	1	ymdF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ymfA-ycfZ	1180479	1181725	reverse	2	ymfA,ycfZ	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2493,10 +2481,10 @@ ymfH-xisE-intE	1199679	1201380	reverse	3	ymfH,xisE,intE	[ICWHO|W|Inferred comput
 ymfI	1201497	1201838	forward	1	ymfI	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ymfJ	1201776	1202084	reverse	1	ymfJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymfK	1202259	1202933	reverse	1	ymfK	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ymfTLMNROPQ-ycfK-ymfS	1203024	1208545	forward	10	ymfT,ymfL,ymfM,ymfN,ymfR,ymfO,ymfP,ymfQ,ycfK,ymfS	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ymfTLMNR-beeE-jayE-ymfQ-ycfK-tfaP	1203024	1208545	forward	10	ymfT,ymfL,ymfM,ymfN,ymfR,beeE,jayE,ymfQ,ycfK,tfaP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymgE	1244728	1244982	forward	1	ymgE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymgF	1218983	1219201	forward	1	ymgF	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ymgGD	1222305	1222919	reverse	2	ymgG,ymgD	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ymgGD	1222305	1222988	reverse	2	ymgG,ymgD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymgH-ycgI	1223465	1223907	forward	2	ymgH,ycgI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymiA-yciX	1335124	1335458	forward	2	ymiA,yciX	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
 ymjA	1357423	1357668	reverse	1	ymjA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2512,16 +2500,13 @@ yncG	1526247	1526864	forward	1	yncG	[ICWHO|W|Inferred computationally without hu
 yncH	1526940	1527152	forward	1	yncH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yncI	1530586	1531332	forward	1	yncI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yncJ	1508834	1509064	reverse	1	yncJ	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yncK_1	1503143	1503310	reverse	1	yncK_1	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yncK_2	1503362	1503649	reverse	1	yncK_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yncK_1K_2	1503143	1503649	reverse	2	yncK_1,yncK_2	[IC|W|Inferred by curator],[ICWHO|W|Inferred computationally without human oversight]	Weak
 yncL	1517099	1517194	reverse	1	yncL	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yncM	1531376	1531576	forward	1	yncM	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yneE	1608108	1609022	reverse	1	yneE	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yneHG	1611966	1613251	reverse	2	yneH,yneG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yneJ	1614804	1615685	forward	1	yneJ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yneK	1615763	1616878	forward	1	yneK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yneL	1590357	1590536	reverse	1	yneL	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yneM	1622646	1622741	forward	1	yneM	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight],[BTEI|W|Boundaries of transcription experimentally identified]	Strong
 ynfA	1655347	1655673	reverse	1	ynfA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ynfB-speG	1655808	1656744	forward	2	ynfB,speG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ynfC	1656747	1657457	reverse	1	ynfC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2534,7 +2519,6 @@ ynfO-ydfO	1636756	1637457	forward	2	ynfO,ydfO	[ICWHO|W|Inferred computationally 
 ynfP	1652728	1652838	reverse	1	ynfP	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yniA	1807796	1808656	forward	1	yniA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yniB	1808697	1809233	reverse	1	yniB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yniC	1809380	1810048	forward	1	yniC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yniD	1805165	1805272	forward	1	yniD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ynjE	1839467	1840774	forward	1	ynjE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ynjF	1840783	1841403	reverse	1	ynjF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2542,7 +2526,7 @@ ynjH	1841863	1842135	reverse	1	ynjH	[AISGDTU|W|Automated inference that a single
 ynjI	1843831	1844871	reverse	1	ynjI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yoaA	1891325	1893235	reverse	1	yoaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yoaB	1893367	1893711	forward	1	yoaB	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yoaC	1894073	1894432	forward	1	yoaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yoaC	1894133	1894432	forward	1	yoaC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yoaE	1900029	1901585	reverse	1	yoaE	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yoaF	1877278	1877532	reverse	1	yoaF	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yoaH	1894552	1894731	reverse	1	yoaH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2555,8 +2539,8 @@ yobH	1908925	1909164	forward	1	yobH	[AISGDTU|W|Automated inference that a single
 yodB	2042368	2042898	forward	1	yodB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yodC	2028188	2028370	reverse	1	yodC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yodD	2024986	2025213	forward	1	yodD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yoeA	2068635	2069027	forward	1	yoeA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yoeE	2070244	2070504	forward	1	yoeE	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yoeA_1	2068635	2069027	forward	1	yoeA_1	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
+yoeA_2	2070244	2070504	forward	1	yoeA_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yoeF	2078575	2078931	forward	1	yoeF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yohC	2225044	2225631	reverse	1	yohC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yohD	2225801	2226379	forward	1	yohD	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
@@ -2574,7 +2558,7 @@ ypfG	2581734	2582777	reverse	1	ypfG	[ICWHO|W|Inferred computationally without hu
 ypfH	2593072	2593770	reverse	1	ypfH	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypfJ-tmcA	2593844	2596737	reverse	2	ypfJ,tmcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypfM	2590807	2590866	reverse	1	ypfM	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yphA	2673274	2673768	forward	1	yphA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+yphA	2673346	2673768	forward	1	yphA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yphCB	2673816	2675761	reverse	2	yphC,yphB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yphFED	2675827	2679367	reverse	3	yphF,yphE,yphD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yphG	2679464	2682745	reverse	1	yphG	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2582,11 +2566,11 @@ yphH	2682863	2684056	forward	1	yphH	[AISGDTU|W|Automated inference that a single
 ypjA	2778146	2782726	reverse	1	ypjA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypjB	2783638	2784429	reverse	1	ypjB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypjC	2784529	2785011	reverse	1	ypjC	[ICWHO|W|Inferred computationally without human oversight]	Weak
-ypjD	2747887	2748753	forward	1	ypjD	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ypjD	2747962	2748753	forward	1	ypjD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypjM_1M_2	2772836	2773158	reverse	2	ypjM_1,ypjM_2	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ypjM_3-yfjU	2771840	2772685	reverse	2	ypjM_3,yfjU	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqaBA	2816512	2817503	reverse	2	yqaB,yqaA	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yqaE	2796870	2797028	reverse	1	yqaE	[LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
+yqaE-kbp	2796337	2797028	reverse	2	yqaE,kbp	[ICWHO|W|Inferred computationally without human oversight]; [PM|S|Polar mutation]; [LTED|S|Length of transcript experimentally determined],[ICWHO|W|Inferred computationally without human oversight]	Strong
 yqcC-truC-yqcA	2922535	2924113	reverse	3	yqcC,truC,yqcA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqcE-ygcE	2900592	2903374	forward	2	yqcE,ygcE	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqeA	3011461	3012393	forward	1	yqeA	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2610,7 +2594,6 @@ yqhC	3154262	3155218	reverse	1	yqhC	[AISGDTU|W|Automated inference that a single
 yqhD-dkgA	3155355	3157450	forward	2	yqhD,dkgA	[ICWHO|W|Inferred computationally without human oversight]; [IDA|S|Inferred from direct assay],[PAGTSBP|W|Products of adjacent genes in the same biological process]	Strong
 yqhG	3157650	3158576	forward	1	yqhG	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqhH	3158627	3158884	forward	1	yqhH	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yqiC	3184840	3185130	forward	1	yqiC	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqiJK	3192208	3194525	forward	2	yqiJ,yqiK	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqjA-mzrA	3247773	3248822	forward	2	yqjA,mzrA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yqjCDEK	3248969	3250376	forward	4	yqjC,yqjD,yqjE,yqjK	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2624,11 +2607,11 @@ yraN	3295394	3295789	forward	1	yraN	[IHBCE|W|Inferred by a human based on comput
 yraP	3296409	3296984	forward	1	yraP	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 yraQ	3297098	3298138	reverse	1	yraQ	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yraR	3298211	3298846	reverse	1	yraR	[ICWHO|W|Inferred computationally without human oversight]	Weak
-yrbG-kdsDC-lptCAB-rpoN-hpf-ptsN-rapZ-npr	3340275	3348238	forward	11	yrbG,kdsD,kdsC,lptC,lptA,lptB,rpoN,hpf,ptsN,rapZ,npr	[LTED|S|Length of transcript experimentally determined]; [ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]; [ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
+yrbG-kdsDC-lptCAB-rpoN-hpf-ptsN-rapZ-npr	3340275	3348238	forward	11	yrbG,kdsD,kdsC,lptC,lptA,lptB,rpoN,hpf,ptsN,rapZ,npr	[LTED|S|Length of transcript experimentally determined]; [ITCR|W|Inferred through co-regulation]; [LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]; [ITCR|W|Inferred through co-regulation],[BTEI|W|Boundaries of transcription experimentally identified],[IEP|W|Inferred from expression pattern]	Weak
 yrbL	3348452	3349084	forward	1	yrbL	[LTED|S|Length of transcript experimentally determined]	Strong
 yrbN-deaD	3305971	3307933	reverse	2	yrbN,deaD	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yrdA	3429236	3429790	forward	1	yrdA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
-yrdD-tsaC-aroE-yrdB	3429766	3431962	reverse	4	yrdD,tsaC,aroE,yrdB	[LTED|S|Length of transcript experimentally determined],[CV(LTED/PM)|C|cross validation(LTED/PM)],[PM|S|Polar mutation]	Confirmed
+yrdD-tsaC-aroE-yrdB	3429766	3431962	reverse	4	yrdD,tsaC,aroE,yrdB	[LTED|S|Length of transcript experimentally determined],[PM|S|Polar mutation]	Strong
 yrfF	3526469	3528604	forward	1	yrfF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 yrfG-hslRO	3528669	3530652	forward	3	yrfG,hslR,hslO	[ICWHO|W|Inferred computationally without human oversight]; [ITCR|W|Inferred through co-regulation]	Weak
 yrhB	3584759	3585043	forward	1	yrhB	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2639,14 +2622,15 @@ ysgA	4015354	4016169	reverse	1	ysgA	[AISGDTU|W|Automated inference that a single
 ytfA	4427769	4428095	forward	1	ytfA	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ytfB	4428079	4428717	reverse	1	ytfB	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ytfE	4431321	4431983	reverse	1	ytfE	[IC|W|Inferred by curator],[BTEI|W|Boundaries of transcription experimentally identified]	Weak
-ytfF	4432091	4433065	reverse	1	ytfF	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ytfF	4432091	4433056	reverse	1	ytfF	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ytfH	4434113	4434493	forward	1	ytfH	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 ytfI	4437707	4438645	forward	1	ytfI	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ytfJ	4438708	4439262	reverse	1	ytfJ	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 ytfK	4439587	4439793	forward	1	ytfK		
 ytfL	4439872	4441215	reverse	1	ytfL	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ytfQRT-yjfF	4449962	4454578	forward	4	ytfQ,ytfR,ytfT,yjfF	[ITCR|W|Inferred through co-regulation],[ICWHO|W|Inferred computationally without human oversight]	Weak
-ytjA	4612110	4612289	forward	1	ytjA	[ICWHO|W|Inferred computationally without human oversight]	Weak
+ytiCD-idlP-iraD	4556607	4557385	forward	4	ytiC,ytiD,idlP,iraD	[LTED|S|Length of transcript experimentally determined]	Strong
+ytjA	4612128	4612289	forward	1	ytjA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ytjB-lplA	4623101	4624789	reverse	2	ytjB,lplA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 ytjC	4633797	4634444	forward	1	ytjC	[AISGDTU|W|Automated inference that a single-gene directon is a transcription unit]	Weak
 yzcX	3993850	3994335	forward	1	yzcX	[ICWHO|W|Inferred computationally without human oversight]	Weak
@@ -2660,6 +2644,7 @@ zinT	2041375	2042025	forward	1	zinT	[LTED|S|Length of transcript experimentally 
 zipA	2530247	2531233	reverse	1	zipA	[ICWHO|W|Inferred computationally without human oversight]	Weak
 zitB	783882	784823	reverse	1	zitB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 zntA	3606451	3608649	forward	1	zntA		
+zntB	1408050	1409033	forward	1	zntB	[ICWHO|W|Inferred computationally without human oversight]	Weak
 znuA	1941651	1942583	reverse	1	znuA	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 znuCB	1942662	1944199	forward	2	znuC,znuB	[BTEI|W|Boundaries of transcription experimentally identified]	Weak
 zraP	4201263	4201688	reverse	1	zraP		

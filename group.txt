@@ -1,38 +1,38 @@
- Betaproteobacteria:black
-NC_011833:brown
-NC_002696:gold
-NC_012442:gold
-NC_002516:brown
-NC_007086:brown
-NC_000913:brown
-NC_004633:brown
-NC_004757:black
-NC_005085:black
-NC_002679:gold
-NC_003143:brown
-NC_005061:brown
- Epsilonproteobacteria:silver
-NC_004311:gold
-NC_002163:silver
- Gammaproteobacteria:brown
-NC_002929:black
-NC_003197:brown
-NC_004917:silver
-NC_004603:brown
- Alphaproteobacteria:gold
-NC_000907:brown
-NC_003064:gold
-NC_003295:black
-NC_005090:silver
-NC_004741:brown
-NC_003112:black
-NC_002489:brown
-NC_003919:brown
-NC_002928:black
-NC_003047:gold
-NC_002663:brown
-NC_002927:black
-NC_002947:brown
-NC_004349:brown
-NC_004463:gold
-NC_004460:brown
+ Betaproteobacteria:indianred
+NC_011833:purple
+NC_002696:green
+NC_012442:green
+NC_002516:purple
+NC_007086:purple
+NC_000913:purple
+NC_004632:purple
+NC_004757:indianred
+NC_003047:green
+NC_002678:green
+NC_003384:purple
+NC_005061:purple
+ Epsilonproteobacteria:yellow
+NC_003065:green
+NC_004310:green
+ Gammaproteobacteria:purple
+NC_005090:yellow
+NC_005085:indianred
+NC_004917:yellow
+ Alphaproteobacteria:green
+NC_000907:purple
+NC_003295:indianred
+NC_003132:purple
+NC_002163:yellow
+NC_002928:indianred
+NC_002929:indianred
+NC_004605:purple
+NC_004741:purple
+NC_003112:indianred
+NC_002488:purple
+NC_002947:purple
+NC_003919:purple
+NC_002663:purple
+NC_002927:indianred
+NC_004460:purple
+NC_004463:green
+NC_004349:purple

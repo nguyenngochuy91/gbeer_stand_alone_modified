@@ -26,7 +26,7 @@ To be tested as requirements
 
 To install these requirements in a single line, copy the following to a command line window:
 ```bash
-apt-get install python-biopython python-matplotlib python-levenshtein clustalw ncbi-tools-bin blast2 ncbi-blast+ cd-hit
+sudo apt-get install python-biopython python-matplotlib python-levenshtein clustalw ncbi-tools-bin blast2 ncbi-blast+ cd-hit muscle
 ```
 
 Downloading GBEER_standalone

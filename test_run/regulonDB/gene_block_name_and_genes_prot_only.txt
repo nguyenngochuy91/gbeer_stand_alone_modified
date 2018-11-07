@@ -46,7 +46,6 @@ thiCEFSGH	thiS:p	thiH:p	thiC:p	thiG:p	thiF:p	thiE:p
 thrS-infC-rpmI-rplT-pheMST-ihfA	rpmI:p	pheS:p	pheT:p	ihfA:p	rplT:p	infC:p	thrS:p	pheM:p
 trpLEDCBA	trpL:p	trpB:p	trpC:p	trpA:p	trpD:p	trpE:p
 ulaABCDEF	ulaD:p	ulaE:p	ulaF:p	ulaA:p	ulaB:p	ulaC:p
-ybgIJKL-nei	ybgI:p	ybgJ:p	ybgK:p	ybgL:p	nei:p
 yceD-rpmF-plsX-fabHDG-acpP-fabF	fabD:p	fabG:p	fabF:p	acpP:p	yceD:p	plsX:p	fabH:p	rpmF:p
 ydgK-rsxABCDGE-nth	rsxA:p	ydgK:p	rsxC:p	rsxB:p	rsxE:p	rsxD:p	rsxG:p	nth:p
 ydhYVWXUT	ydhY:p	ydhX:p	ydhW:p	ydhV:p	ydhU:p	ydhT:p
